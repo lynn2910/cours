@@ -9,8 +9,6 @@ Vous trouverez ici tout les cours et ressources que j'ai accumulé au cours de m
 Chaque dossier est intitulé S*X* et correspond à un semestre du BUT informatique.
 
 > [!Summary|wide-3 min-0]+ Semestres du BUT informatique
-> - Premier semestre:
-> - Second semestre:
 > - Troisième semestre: [Programme S3](Programme%20S3)
 > - Quatrième semestre: [Programme S4](Programme%20S4)
 

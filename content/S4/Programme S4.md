@@ -4,12 +4,18 @@ draft: false
 tags:
   - programme
   - formation
-date: 2024-08-25
+date: 2024-08-30
 ---
 ## Stage
 
 8 à 12 semaines sont dédiées aux stages.
 
+**Le stage comptera pour ==45%== de la note de S4.**
+
+> [!Warning|wide-3 min-0] Début des stages
+> Les stages débuteront le 7 avril 2025 et les sujets seront à valider par Mr Ambert au préalable.
+
+*Les détails sur le stage seront rajoutés au fur et à mesure que les informations nous parviennent.*
 ### Recherche d'entreprise
 
 Il faut "activer son réseau" sur des services tel que [Linkedin](https://www.linkedin.com/), [Indeed](https://fr.indeed.com/) ou [HelloWork](https://www.hellowork.com/fr-fr/), bref, des endroits où des entreprises sont référencées.
@@ -27,8 +33,18 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - Méthode d'optimisation
 - Anglais
 - Communication interne
-- Virtualisation
+- ~~Virtualisation~~ => Remplacé par cryptographie en S3
 - Management avancé des SI
 - Complément Web
-- Développement Web (Android ou IOS)
-- Automates
+- Développement mobile (Android ou IOS)
+- ~~Automates~~ => Remplacé par développement Android
+- **Analyse et virtualisation** (ajouté)
+
+## Passage en S5
+
+Pour passer en S5, il faut:
+- Valider toutes les compétences du BUT1
+- 4 compétences où la moyenne est >= à 10/20 
+- Aucune compétence en dessus de 8/20 (éliminatoire)
+
+Aucun redoublement de droit n'est possible.
