@@ -71,10 +71,10 @@ En effet, sur github pages (exemple), vous pourrez trouver **martindupont.github
 
 *Martin* pourrait alors acheter le nom de domaine **martin.fr**. Ce ne serait pas mieux aux yeux des recruteurs?
 
-Le meilleur dans l'histoire, c'est que les noms de domaines ce n'est pas chère! (du moment qu'on ne prend pas un nom connu).
+Le meilleur dans l'histoire, c'est que les noms de domaines ce n'est pas si chère! (du moment qu'on ne prend pas un nom connu).
 
-Par exemple, le nom de domaine **chamallow.fr** chez [OVHcloud](https://www.ovh.com/fr/order/webcloud/?#/webCloud/domain/select?selection=~()) compteras 5.59€ puis 7.79€ **par an.**
-Pourtant, un nom de domaine tel que **martin** coûtera + de 100€ au **minimum** (sauf **martin.christmas** bizarrement...).
+Par exemple, le nom de domaine **chamallow.fr** chez [OVHcloud](https://www.ovh.com/fr/order/webcloud/?#/webCloud/domain/select?selection=~()) coûteras 5.59€ puis 7.79€ **par an.**
+Pourtant, un nom de domaine tel que **martin** coûtera + de 100€ au **minimum** (sauf **martin.christmas** bizarrement...). C'est comme vous voulez.
 
 *Vous remarquerez que ce site est à l'adresse **lynn.chamallow.xyz**, c'est tout simplement le nom de domaine d'un amis qu'on se partage. On peut découper le nom de domaine **chamallow.xyz** en sous-domaines (avec leurs propres sous-domaines), utile pour des projets donc.*
 
