@@ -13,3 +13,8 @@ Chaque dossier est intitulé S*X* et correspond à un semestre du BUT informatiq
 > - Quatrième semestre: [Programme S4](Programme%20S4)
 
 Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suivante: [cedric.colin35@gmail.com](mailto:cedric.colin35@gmail.com)
+
+
+## Resources
+
+[[Créer son portfolio]]
