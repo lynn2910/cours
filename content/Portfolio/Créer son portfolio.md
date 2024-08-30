@@ -29,8 +29,7 @@ Mon conseil est de commencer par des croquis et notes sur comment l'organiser, p
 Aussi, il sera sans doute nécessaire de recommencer la maquette plusieurs fois pour atteindre ce que vous recherchez.
 
 Prenons un exemple; Mes tentatives de portfolio.
-
-### Exemple
+#### Exemple
 
 Voici ma première tentative:
 
@@ -54,3 +53,43 @@ Evidemment, chaque portfolio reflète la personne et est personnel, ca permet au
 >  
 > Je vous conseille de passer autant de temps sur la version ordinateur que sur la version mobile.
 
+### Développement
+
+Une fois le design établi, vient la partie la plus *marrante*: Le développement.
+
+#### Déploiement
+
+Tout d'abord, vous allez devoir vous demander comment vous comptez le déployer, et la raison pour laquelle c'est la première étape du développement est simple.
+
+Si vous voulez ajouter un blog, il faudra une base de donnée.
+Dans ce cas, des solutions tel que Vercel existent, ou alors vous pouvez l'héberger sur votre propre machine qui tourne 24h/24 7j/7.
+
+Et si il n'y a pas besoin de base de donnée ou d'éléments **dynamiques** (pour faire simple, s'il ne faut pas de backend), le site peut alors être déployé sur des plateformes tel que **github pages** (il existe de nombreux services similaires).
+
+Finalement, une étape optionnelle est de choisir son nom de domaine!
+En effet, sur github pages (exemple), vous pourrez trouver **martindupont.github.io**, ce n'est pas le plus jolie et vous pourriez préférer un nom de domaine custom (utilisable également pour vos projets persos, et pas si chère).
+
+*Martin* pourrait alors acheter le nom de domaine **martin.fr**. Ce ne serait pas mieux aux yeux des recruteurs?
+
+Le meilleur dans l'histoire, c'est que les noms de domaines ce n'est pas chère! (du moment qu'on ne prend pas un nom connu).
+
+Par exemple, le nom de domaine **chamallow.fr** chez [OVHcloud](https://www.ovh.com/fr/order/webcloud/?#/webCloud/domain/select?selection=~()) compteras 5.59€ puis 7.79€ **par an.**
+Pourtant, un nom de domaine tel que **martin** coûtera + de 100€ au **minimum** (sauf **martin.christmas** bizarrement...).
+
+*Vous remarquerez que ce site est à l'adresse **lynn.chamallow.xyz**, c'est tout simplement le nom de domaine d'un amis qu'on se partage. On peut découper le nom de domaine **chamallow.xyz** en sous-domaines (avec leurs propres sous-domaines), utile pour des projets donc.*
+
+#### Programmation
+
+Une fois les choix liés au développement terminés, il est temps de commencer à programmer.
+
+Encore une fois, il va falloir faire des choix.
+
+React? Angular? VueJS? Astro? Flask? HTML Vanilla? 
+CSS vanilla? SASS? Bootstrap? TailwindCSS? 
+
+Il y a tant de choix que je ne peux tout simplement pas les lister et en conseiller un en particulier, car chacun a ses préférences!
+
+Je préfère le combos VueJS + Less (CSS sous stéroïdes), mais un camarade préfèrera [AstroJS](https://astro.build/), et un autre préfère React + Tailwind.
+
+Choisissez la techno que vous préféré et celle avec laquelle vous êtes le plus à l'aise, et si vous voulez découvrir une nouvelle technologie, **ne faites pas un portfolio!**
+Ce sera une perte de temps. Faites une todo app, une horloge, un CRUD, un site sur les différentes races de chats (ok j'avais pas d'inspi) ou tout petit projet qui vous intéresse (ca fera aussi des projets à ajouter dans votre portfolio), mais un portfolio avec des technos que vous ne connaissez pas vous prendra juste plus de temps, quelques mots de têtes et des insultes envers la documentation ou le code qui ne marchera pas.
