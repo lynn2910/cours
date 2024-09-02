@@ -64,21 +64,15 @@ Ainsi, si on chiffre le message `It's been fun, Noah` avec la clé `s`, on obtie
 > Réponse à la question "Ecrivez la fonction de déchiffrement correspondante"
 > ```py
 > def decryptShift(cryptedMessage, key = "d"):
-> 
-  decryptedMessage = ""
-> 
-  if key.isalpha():
+> decryptedMessage = ""
+>  if key.isalpha():
 >     key = numericChar(alphabet, key)
-> 
 >   for car in cryptedMessage:
-> 
 >     if car.lower() in alphabet:
-> 
 >       decryptedMessage += alphabet[(numericChar(alphabet,car) - key + 26)%26]
-> 
 >     else:
 >       decryptedMessage += car
-  return decryptedMessage;
+>   return decryptedMessage;
 > ```
 
 
@@ -132,4 +126,6 @@ Ce message peut être décodé par les clés 6, 32, 58, 84...
 Pourquoi? Car ces 4 nombres ont un point commun, ils peuvent être exprimé par $6 + (26*x)$
 
 Cette méthode peut être testée et validée pour toutes les clés et tout les messages possibles.
+
+## Chiffrement Affine
 
