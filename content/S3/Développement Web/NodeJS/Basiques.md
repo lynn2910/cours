@@ -48,6 +48,8 @@ Voir [mdn (var)](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/
 > [!Warning] Avertissement
 > Il est généralement recommandé d'éviter `var` comme la peste, sauf dans des cas biens précis où le développeur sais ce qu'il fait et le documente.
 
+
+
 ## Fonctions
 
 Il existe plusieurs façons de déclarer une fonction:
@@ -105,11 +107,76 @@ Il suffit de placer son texte entre ``` `...` ```, il est alors possible d'appel
 
 ## Conditions
 
-TODO
+Les conditions sont très simples, elles s'expriment de cette manière:
+```js
+if (1 + 1 == 0) {
+	console.log("Aucun soucis");
+} else {
+	console.log("...")
+}
+```
+
+Il est également possible de retirer les accolades si on a une seule ligne.
+
+#### Opérateurs de conditions
+
+Il y a différents opérateurs de conditions:
+- `==` permet de tester une égalité sans vérifier le type (`1 == "1"` sera vrai)
+- `===` est identique mais compare le type, `1 === 1` sera faux
+- `!` est la négation, il peut être placé avant `=` et `==` (`!=` et `!==`)
+- On retrouve les opérateurs `>`, `<`, `>=` et `<=` comme en Java
+
+> [!Warning] Attention au `=`
+> Mettre un `=` dans une condition ne va pas provoquer d'erreurs (oui oui), par exemple: (exemple testé dans la console, tapez `node` dans le terminal pour tester vous-mêmes)
+> ```js
+> > let x = 2
+undefined
+> > if (x = 5){
+> ... console.log("x == 5");
+> ... }
+> x == 5
+> undefined
+> > console.log(x)
+> 5
+> undefined
+> ```
+> Heureusement, les IDE JetBrains sauront vous le faire remarquer.
 ### Conditions ternaires
 
-TODO
+On a vu les conditions avec des gros `if`, mais parfois c'est gênant. Par exemple, prenons l'exemple où on afficher "majeur" ou "mineur" selon la variable `age`.
 
+Au lieu de prendre plusieurs lignes et une variable, on peut faire ceci:
+```js
+const age = 19;
+console.log(`Cet élève a ${age >= 18 ? "majeur" : "mineur"}`);
+```
+
+On utilise la syntaxe `condition ? vrai : faux`, l'avantage est qu'elle peut être placée n'importe où: déclaration de variable, console.log, argument de fonction..., plus utile pour des petites conditions donc.
+
+### Conditions en série
+
+Pour exprimer une condition en série, on peut utiliser l'instruction `switch`:
+```js
+let language = "fr";
+
+switch (language){
+	case "fr": {
+		console.log("Francais");
+		break; // permet de ne pas exécuter les instructions suivantes
+	}
+	case "en-US": // Pas de break => si en-UK ou en-US est vrai, alors on verra "English"
+	case "en-UK": {
+		console.log("English");
+		break;
+	}
+	default:
+		console.log(`Langue inconnue: ${language}`);
+}
+```
+
+## Boucles 
+
+Les boucles similaires à Java
 ## Types
 
 On retrouvera:
@@ -136,6 +203,90 @@ const noms = ["Leslie", "Marvyn", "Baptiste"];
 
 noms.push("Anna"); // On ajoute un nom dans l'Array
 
-console.log("Il y a )
+console.log(`Il y a ${noms.length} enregistrés.`);
 
+let i = 0;
+noms.forEach(function(nom){
+	if (nom.toUpperCase().startsWith("A"))
+		i++;
+});
+
+console.log(`${i} noms commencent par la lettre "A"`)
 ```
+
+#### Boucles sur un Array
+
+Il est possible d'utiliser plusieurs boucles:
+```js
+for (let nom of noms){
+	console.log(nom); // Affichera tout les noms dans l'ordre où ils sont dans l'Array
+}
+```
+```js
+for (let nom in noms){
+	console.log(nom); // Ce ne sera pas le nom mais l'index.
+}
+```
+
+On peut également opter pour des méthodes tel que `.forEach(fonction)` et `.map(fonction)`
+
+### Object
+
+> [!Warning] Attention
+> A ne pas confondre avec le terme `Object` dans la POO! Un `Object` en **POO** n'est pas *l'object* qu'on va voir maintenant.
+
+
+Un object en javascript est similaire à un **dictionnaire**, genre LITTERALEMENT.
+
+On déclare un object de cette manière:
+```js
+let cat = {
+	name: "Plume",
+	age: 9,
+	owner: "Cédric",
+	toys: ["Ficelle", "Main"],
+	pet: function(){
+		console.log(`${this.name} ronronne`);
+	}
+}
+```
+
+On peut ensuite y accéder de cette manière:
+```js
+console.log(`Mon chat s'appelle ${cat.name}`);
+```
+
+L'avantage d'un object est qu'il permet de structurer les données de nombreuses manières mais surtout, il est TRES efficace.
+
+> [!Summary]+ Raison de son efficacité
+> Les object est ce qu'on peut appeler des `HashMap`. Un `Map` est une structure de donnée clé-valeur où chaque valeur est associée à une clé. Un object va utiliser ce principe.
+> 
+> Son efficacité vient du fait qu'il est très efficace d'associer une clé à une référence mémoire. Il n'est pas nécessaire de stocker les données dans un Array qu'il faudra parcourir.
+> Quand on accède à une clé, on va directement recevoir son adresse mémoire, ce qu'il le rend très rapide.
+> 
+> La structure de donnée `Map` (voir [[POO]]) est similaire à l'exception que la clé peut être de tout type (Object, array, instance de class, ...) et possède des méthodes plus "haut-niveau" (.get, .set, ...) alors qu'un object est plus "primitif" et ses clés seront en général des chaines de caractères et nombres.
+
+#### Méthodes utiles
+
+Il existe plusieurs méthodes utiles à connaitre.
+
+```js
+const properties = Object.keys(cat); // permet de récupérer un Array avec les clés
+console.log(`La variable 'cat' possède les propriétés suivantes: ${properties}");
+```
+```js
+Object.values(cat); // permet d'obtenir toutes les valeurs
+```
+```js
+Object.entries(cat); // Renvoit les paires clé-valeur
+// On retrouvera par exemple ceci:
+[
+  [ 'name', 'Plume' ],
+  [ 'age', 9 ],
+  [ 'owner', 'Cédric' ],
+  [ 'toys', [ 'Ficelle', 'Main' ] ],
+  [ 'pet', [Function: pet] ]
+]
+```
+
+Il existe de nombreuses autres méthodes intéressantes détaillées sur [mdn](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Object)
