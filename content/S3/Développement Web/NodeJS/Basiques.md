@@ -39,7 +39,7 @@ var x = 10;
 
 console.log(x); // 20
 ```
-`x` est une variable **globale** (var), ça signifie que, une fois définie, `x` sera accessible de partout. Cela pourra poser problème, notamment si une variable avec le même nom est déclaré plus tard, c'est le concept de .
+`x` est une variable **globale** (var), ça signifie que, une fois définie, `x` sera accessible de partout. Cela pourra poser problème, notamment si une variable avec le même nom est déclaré plus tard, c'est le concept de shadowing.
 
 Un autre soucis (ou avantage, mais c'est rare) est que `x` sera égale à `undefined` avant qu'il soit déclarer ([mdn var#Hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#hoisting))
 
