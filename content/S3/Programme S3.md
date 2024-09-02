@@ -1,9 +1,7 @@
 ---
 title: Programme S3
 draft: false
-tags:
-  - programme
-  - formation
+tags: []
 date: 2024-08-30
 ---
 Vous trouverez ici le programme du semestre 3 accompagné des informations nécessaires à connaitre.
@@ -18,7 +16,7 @@ Le stage ne se déroule pas en S3 mais en S4.
 ## Programme du semestre
 
 Au cours de ce semestre, les technologies et cours suivants seront vus:
-- Développement web
+- [[Développement Web]]
 - Développement efficace
 - Analyse
 - Qualité de développement

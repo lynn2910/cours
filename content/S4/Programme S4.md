@@ -1,9 +1,7 @@
 ---
 title: Programme S4
 draft: false
-tags:
-  - programme
-  - formation
+tags: []
 date: 2024-08-30
 ---
 ## Stage
