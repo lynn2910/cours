@@ -2,6 +2,7 @@
 title: Méthode Affine
 draft: false
 tags:
+  - Cours
 ---
 ## Définition
 

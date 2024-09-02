@@ -2,6 +2,7 @@
 title: Chiffre de Vigenère
 draft: false
 tags:
+  - Cours
 ---
 ## Table de Vigenère (Carré)
 
