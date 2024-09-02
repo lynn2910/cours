@@ -52,3 +52,17 @@ def encryptVigenere(m, key):
 
 Le déchiffrement s'exprime quand à lui avec l'équation $d_i = (c_i - k_i)\% 26$
 
+Où `d` est le message déchiffré. Les autres variables sont **identiques** à la méthode de chiffrement.
+
+Ainsi, on peut déchiffrer des messages en utilisant cette méthode:
+```py
+def decryptVigenere(cm, key):
+  decryptedMessage = ""
+  for i in range(0, len(cm)):
+    decryptedMessage += alphabet[vigenere(
+        numericChar(alphabet, cm[i]),
+        26 - numericChar(alphabet, key[i % len(key)])
+    )]
+  return decryptedMessage
+```
+
