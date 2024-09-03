@@ -84,3 +84,50 @@ Référence: [npm](https://docs.npmjs.com/cli/v10/configuring-npm/package-json)
 Yarn est littéralement **npm**, mais il est connu pour être plus rapide, mais il a un autre avantage:
 
 Il va installer toutes les dépendances dans un seul dossier et créer des liens symboliques, ce qui peut être très utile quand on a beaucoup de projets utilisant NodeJS
+
+## Structure du code
+
+Il n'y a aucune norme spécifique pour JavaScript, mais la structure suivante est recommandée:
+```bash
+├── src
+|   ├── app.js
+|   └── notes.js
+├── package.json
+└── node_modules
+```
+
+le dossier `src` est bien souvent utilisé pour y placer tout le code.
+
+## Librairies et outils utiles
+
+Il est recommandé, pour des **gros** projets:
+- [eslint](https://eslint.org/): permet d'éviter de nombreuses erreurs de style de code qu'on peut faire. Compatible avec la suite JetBrains.
+- [typescript](https://www.typescriptlang.org/): permet d'ajouter un système de typage en Javascript. Très utile pour renforcer la stabilité du projet.
+
+## JavaScript Documentation (JSdoc)
+
+La JSdoc est une façon de documenter le code, voici un exemple concret:
+```js
+/**
+  * Greet someone with either a formal or non-formal sentence.
+  * 
+  * @param {string} name The name of the person who is greeted
+  * @param {boolean} [formal] Whether we'll use the formal sentence
+  * 
+  * @return {string} The answer of the greeted person
+  */
+function greetPeople(name, formal = true){
+  // ...
+}
+```
+
+On peut voir que cette documentation, si elle parait beaucoup plus verbose et longue à taper, elle permet trois choses:
+- On sais exactement quel paramètre sert à quoi et quel type est attendu
+- On précise ce qui est renvoyé
+- L'éditeur (surtout les IDE JetBrains) sont capable de comprendre la JSdoc et de proposer la bonne completion. (par exemple une erreur apparaitra si on donne un Array pour l'argument `name`)
+
+Références:
+- [JSdoc](https://jsdoc.app/)
+- [JSdoc @param](https://jsdoc.app/tags-param)
+- [JSdoc @return](https://jsdoc.app/tags-returns)
+
