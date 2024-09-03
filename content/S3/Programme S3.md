@@ -20,6 +20,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - Développement efficace
 - Analyse
 - Qualité de développement
+	- [[Programmation Objet]]
 - Programmation systèmes (C/C++)
 - Architecture réseaux
 - SQL et programmation

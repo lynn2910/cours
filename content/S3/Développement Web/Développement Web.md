@@ -1,8 +1,7 @@
 ---
 title: Développement Web
 draft: false
-tags:
-  - Cours
+tags: []
 ---
 ## Resources utiles
 

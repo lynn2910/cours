@@ -1,8 +1,7 @@
 ---
 title: Chiffrement symétrique
 draft: false
-tags:
-  - Cours
+tags: []
 ---
 Cours: [TD1-crypto.pdf](TD1-crypto.pdf)
 ## Origine

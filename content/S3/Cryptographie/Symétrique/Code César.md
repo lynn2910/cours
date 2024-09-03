@@ -1,8 +1,7 @@
 ---
 title: Code César
 draft: false
-tags:
-  - Cours
+tags: []
 ---
 
 Le code césar était utilisé pendant l'antiquité par les romains pour cacher leurs communications entre militaires.

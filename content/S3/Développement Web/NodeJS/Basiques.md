@@ -1,8 +1,7 @@
 ---
 title: Basiques
 draft: false
-tags:
-  - Cours
+tags: []
 ---
 ## Déclaration de variable
 
@@ -96,6 +95,42 @@ function carre(x){
 
 Il est aussi tout à fait possible d'utiliser une fonction anonyme et de l'assigner à une fonction.
 
+
+### Arguments de fonction
+
+Il existe plusieurs façons de déclarer des arguments*
+
+**La méthode classique:**
+```js
+function rouler(voiture){
+	// ...
+}
+```
+
+**Argument optionnel:**
+```js
+function rouler(voiture, type_route = "ville"){
+	// ...
+}
+
+// On peut alors faire:
+rouler(voiture);
+rouler(voiture, "campagne");
+rouler(voiture, type_route = "campagne");
+```
+
+**Arguments groupés:**
+```js
+function envoyer_logs(...logs){
+	console.log(`${logs.length} logs ont été envoyés`);
+}
+
+// permet de capter tout les arguments après:
+envoyer_logs("Hello", "World", 8, {}, [1, 2, 3]);
+// On verra "5 logs ont été envoyés"
+```
+
+Pour plus de détails: [mdn Paramètres des fonctions](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Functions#param%C3%A8tres_des_fonctions)
 ## Manipulation de string
 
 On peut manipuler un string de cette manière:
@@ -227,9 +262,32 @@ for (let nom in noms){
 	console.log(nom); // Ce ne sera pas le nom mais l'index.
 }
 ```
+```js
+// rien de nouveau à ce niveau, c'est comme en Java.
+for (let i = 0; i <= 5; i++) {
+	console.log(i);
+}
+```
 
 On peut également opter pour des méthodes tel que `.forEach(fonction)` et `.map(fonction)`
 
+
+#### Déstructurer un Array
+
+On peut déstructurer un Array de cette façon:
+```js
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+
+console.log([...arr1, ...arr2]);
+```
+On obtiendrais alors:
+```js
+[ 1, 2, 3, 4, 5, 6 ]
+```
+
+> [!Success] Remarque
+> Cela peut marcher avec PLEINS de types (object, Map, ...)
 ### Object
 
 > [!Warning] Attention
