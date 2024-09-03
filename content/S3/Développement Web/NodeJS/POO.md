@@ -3,9 +3,6 @@ title: POO
 draft: false
 tags:
 ---
-> [!Warning] Note
-> Je dois le rédiger prochainement
-
 > [!Success] Note sur la POO
 > JavaScript possèdent de nombreuses similitudes avec Java.
 > Pour voir les bases de la POO en Java, voir [[Rappel Java]].
