@@ -40,3 +40,15 @@ Les droits d'accès des membres sont spécifiés par:
 Instancier, c'est appeler un des constructeurs de la classe.
 
 
+## L'héritage
+
+### 2.1 Pourquoi? Comment?
+
+L'héritage permet la modélisation d'un cas particulier d'une classe existante sans devoir ré-écrire tout ce qui leur est commun.
+
+Par exemple, un Bus et une Voiture auront des points communs tout en étant différents en certains points.
+
+### 2.2 Limiter l'héritage
+
+Il est nécessaire de limiter l'héritage par la complexité (usage - profondeur). Elle ne concerne que les membres de statut Public ou Protected.
+
