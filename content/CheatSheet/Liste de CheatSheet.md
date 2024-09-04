@@ -5,6 +5,6 @@ tags:
 aliases:
   - CheatSheet
 ---
-## Liste des cheatsheets:
+## Liste des CheatSheet:
 - [[matplotlib Cheat Sheets.pdf]]
 - [[Pandas Basics Cheat Sheet.pdf]]

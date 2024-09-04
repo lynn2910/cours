@@ -19,7 +19,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Développement Web]]
 - Développement efficace
 - [[Analyse]]
-- Qualité de développement
+- Qualité de développement:
 	- [[Programmation Objet]]
 - Programmation systèmes (C/C++)
 - Architecture réseaux
@@ -29,7 +29,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - Management SI (Service Informatique)
 - Droit contrats et numérique
 - Anglais
-- Communication professionnelle
+- [[Communication professionnelle]]
 
 ## SAE
 
