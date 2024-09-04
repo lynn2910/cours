@@ -18,7 +18,7 @@ Le stage ne se déroule pas en S3 mais en S4.
 Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Développement Web]]
 - Développement efficace
-- Analyse
+- [[Analyse]]
 - Qualité de développement
 	- [[Programmation Objet]]
 - Programmation systèmes (C/C++)
