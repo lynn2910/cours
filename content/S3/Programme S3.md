@@ -24,7 +24,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - Programmation systèmes (C/C++)
 - Architecture réseaux
 - SQL et programmation
-- Probabilités
+- [[Probabilités]]
 - [[Cryptographie]]
 - Management SI (Service Informatique)
 - Droit contrats et numérique
