@@ -52,3 +52,58 @@ Par exemple, un Bus et une Voiture auront des points communs tout en étant diff
 
 Il est nécessaire de limiter l'héritage par la complexité (usage - profondeur). Elle ne concerne que les membres de statut Public ou Protected.
 
+### 2.4 Surcharge/sur-définition
+
+Avoir plusieurs méthodes qui portent le même nom est une surcharge de la méthode. Pour coexister, deux méthodes portant le même nom, doivent avoir une signature différente.
+
+La signature est composée:
+- Du nom
+- Des types de paramètres (dans le sens donné)
+
+Exemple de signature: `int add(int, int)`
+
+#### Redéfinition d'attributs
+
+> [!Warning] A éviter
+
+
+```java
+class A {
+	protected int val;
+
+	public A(int val){
+		this.val = val;
+	}
+
+	public void print(){
+		System.out.println(this.val);
+	}
+}
+
+class B extends A {
+	private int val;
+	
+	public B(int val){
+		super(val);
+		this.val = val;
+	}
+
+	public void print(){
+		System.out.println(super.val);
+	}
+}
+
+class C extends B {
+	// ...plus accès à `val`
+}
+```
+
+Dans ce cas, la classe `B` possédera deux propriétés `val` qui sont indiscernables.
+
+#### Redéfinition de méthodes
+
+La redéfinition de méthodes permet de remplacer le comportement d'une méthode héritée pour l'adapter la classe.
+
+Cela permet de:
+- Spécialiser le traitement lorsque celui de classe mère n'est pas assez spécifique
+- La méthode héritée n'as pas forcément n'as pas nécessairement de définition. Il suffit qu'elle soit déclarés
