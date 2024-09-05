@@ -26,7 +26,8 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - SQL et programmation
 - [[Probabilités]]
 - [[Cryptographie]]
-- Management SI (Service Informatique)
+- Management SI (Service Informatique):
+	- [[Méthode agile]]
 - Droit contrats et numérique
 - Anglais
 - [[Communication professionnelle]]
