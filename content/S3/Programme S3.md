@@ -13,6 +13,10 @@ Vous trouverez ici le programme du semestre 3 accompagné des informations néce
 Le stage ne se déroule pas en S3 mais en S4.
 *[Voir S4](Programme%20S4.md)*
 
+## SAE
+
+[[Présentation SAE]]
+
 ## Programme du semestre
 
 Au cours de ce semestre, les technologies et cours suivants seront vus:
