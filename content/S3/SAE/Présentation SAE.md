@@ -21,6 +21,9 @@ Présentation & rendus fin de semestres.
 
 ### Sujet 1: orienté web
 
+> [!Summary] Résumé des consignes:
+> [[Consignes Sujet 1]]
+
 Gestion d'un évènement:
 
 #### Architecture logicielle

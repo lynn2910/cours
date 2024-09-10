@@ -107,3 +107,5 @@ La redéfinition de méthodes permet de remplacer le comportement d'une méthode
 Cela permet de:
 - Spécialiser le traitement lorsque celui de classe mère n'est pas assez spécifique
 - La méthode héritée n'as pas forcément n'as pas nécessairement de définition. Il suffit qu'elle soit déclarés
+
+
