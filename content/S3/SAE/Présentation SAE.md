@@ -4,7 +4,10 @@ draft: false
 tags: 
 aliases:
   - sae
+date: 2024-09-10
 ---
+[[Agilité dans la SAE]]
+[[Consignes Sujet 1]]
 ## Objectifs
 
 Réalisation d'une appli. en couvrant des compétences du S3-S4

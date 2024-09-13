@@ -110,6 +110,88 @@ Retournera `0` en cas de succès et `EOF` en cas d'échecs
 
 Documentation sur EOF: [wikipedia.org](https://fr.wikipedia.org/wiki/End-of-file)
 
+#### Exemple: Ouvrir un fichier 'toto.txt'
+
+**En lecture:**
+
+```c
+File *f;
+f = fopen("toto.txt", "r");
+
+if (f == NULL) {
+	perror("fopen");
+	exit(-1);
+}
+
+// opérations de lectures...
+
+if (fclose(f)) { // car si succès, alors = 0 donc false
+	perror("fclose");
+}
+```
+
+**En lecture/écriture:**
+
+**Par octet:**
+```c
+// lecture
+int getc(File* stream)
+int fgetc(File* stream)
+int getchar(void)
+
+// écriture
+int putc(int c, File* stream)
+int fputc(int c, File* stream)
+int putchar(int c);
+```
+
+**Par bloc:**
+```c
+size_t freed(void *ptr, site_t size, size_t nmemb, File* stream)
+size_t fwrite(const void *ptr, size_t size, size_t nmemb,File* stream)
+```
+
+Lecture (écriture) de `nmemb` objets de taille `size` vers mémoire pointée par `ptr` depuis (vers) le descripteur `Stream`
+
+**Exemple**
+```c
+// lecture
+int bob[50];
+size_t n;
+
+n = fread(bob, sizeof(int), 50, f)
+if (n != 50) { /* message */ }
+
+// avec des char
+char ligne[50]
+size_t nl;
+
+nl = fread(ligne, 1, 50, f) // char de taille '1'
+if (n != 50) { /* message */ }
+```
+
+**Formatées**
+```c
+// sur stdout
+int printf(cpnst char* format, ...)
+// print sur le fichier de descripteur F
+int fprintf(File* f, const char* format, ...)
+// En mémoire à l'adresse pointée par S.
+int sprintf(char* s, const char* format, ...)
+// comme sprintf mais écrit au plus 'n' caractères
+int snprintf(char* s, size_t n, const char* format, ...)
+```
+
+> [!Error] Méthode `sprintf` à éviter
+
+```c
+// Depuis stdin
+int scanf(const char* format, ...)
+// Depuis le fichier 'f'
+int fscanf(File* f, const char* format, ...)
+// Depuis la chaîne à l'adresse primaire pointée par 's'
+int sscanf(const char* s, const char* format, ...)
+```
 ### Bas-niveau
 
 > [!Warning] TODO
