@@ -116,10 +116,11 @@ Mme Lemasson travaille en tant que caissière à temps partiel. Elle ne travaill
 D'autre part, son contrat ne prévoit pas la possibilité de faire des heures complémentaires, mais son employeur exige régulièrement qu'elle travaille 1 ou 2 heures de plus que ce que prévoit son contrat de travail.
 2. Mme Lemasson peut-elle refuser d'effectuer des heures complémentaires ?
 
+
+
 ### Cas n°13
 
-M. Pierre a été embauché en contrat à durée déterminée par une société de transport en tant que chauffeur pendant trois semaines, en remplacement d'un salarié malade. À l'issue de ces trois semaines, le salarié malade adresse un nouvel arrêt maladie et le responsable du personnel propose à M. Pierre de conclure un deuxième contrat de remplacement dès le lendemain de la fin du premier contrat, toujours en remplacement de ce salarié malade. Un proche de M. Pierre prétend que l'employeur aurait dû respecter un délai entre les deux
-contrats.
+M. Pierre a été embauché en contrat à durée déterminée par une société de transport en tant que chauffeur pendant trois semaines, en remplacement d'un salarié malade. À l'issue de ces trois semaines, le salarié malade adresse un nouvel arrêt maladie et le responsable du personnel propose à M. Pierre de conclure un deuxième contrat de remplacement dès le lendemain de la fin du premier contrat, toujours en remplacement de ce salarié malade. Un proche de M. Pierre prétend que l'employeur aurait dû respecter un délai entre les deux contrats.
 
 Qu'en pensez-vous ?
 
@@ -129,15 +130,19 @@ M. Dublans a été embauché en contrat à durée déterminée à partir du 16 m
 
 Que pouvez-vous dire à M. Dublans quant au terme de ce contrat ?
 
+C'est un CDI à temps plein
+
 ### Cas n°15
 
-Mme Prune a été engagée en septembre 2005 en contrat à durée indéterminée en tant que chargée des affaires commerciales par l'entreprise Tom Pousse qui fabrique des vêtements d'enfant. Son secteur commercial comprend les départements 92, 75 et 78. Son contrat écrit comporte un certain nombre de clauses, dont une clause de non-concurrence. Celle-ci prévoit qu'en cas de démission ou de licenciement, Mme Prune ne pourra passer au service
-d'une maison concurrente pendant un délai de deux ans, dans un secteur s'étendant aux départements 92, 75 et 78 et uniquement dans son activité commerciale.
+Mme Prune a été engagée en septembre 2005 en contrat à durée indéterminée en tant que chargée des affaires commerciales par l'entreprise Tom Pousse qui fabrique des vêtements d'enfant. Son secteur commercial comprend les départements 92, 75 et 78.
+Son contrat écrit comporte un certain nombre de clauses, dont une clause de non-concurrence. Celle-ci prévoit qu'en cas de démission ou de licenciement, Mme Prune ne pourra passer au service d'une maison concurrente pendant un délai de deux ans, dans un secteur s'étendant aux départements 92, 75 et 78 et uniquement dans son activité commerciale.
+
 En mai 2007, Mme Prune trouve un nouvel emploi dans une entreprise concurrente
 fabriquant des vêtements d'enfant, située à Nanterre, et quitte l'entreprise. Le responsable du personnel de Tom Pousse n'accepte pas cette situation et veut intenter une action pour non-respect de la clause de non-concurrence à l'encontre de Mme Prune.
 
 Que pouvez-vous lui dire ?
 
+Il manque la contre-partie financière dans le contrat, donc pas de clause de non-concurrence.
 ### Cas n°16
 
 Vincent, âgé de 19 ans, a signé un contrat d'apprentissage de deux ans pour devenir carrossier automobile. À l'issue du premier mois de travail, son employeur lui remet un bulletin de salaire et Vincent constate que son salaire proportionnel au SMIC est équivalent à 20 % du montant du SMIC, ce qui l'étonne. D'autre part, déçu par ce premier mois de contrat, Vincent souhaite rompre celui-ci. II en informe son employeur qui lui précise qu'il n'y
@@ -146,17 +151,18 @@ Que pouvez-vous répondre sur ces deux points ?
 
 ### Cas n°17
 
-Depuis huit ans, Thomas est salarié d'une entreprise de transport située à Paris. Son contrat comporte une clause de mobilité sur les régions Nord-Pas-de-Calais et Pays-de-Loire. Son employeur l'informe que, dans deux mois, celui-ci se verra muter à Lille, l'agence de Lille se développant et ayant besoin de personnes connaissant le fonctionnement de l'entreprise. Benoît, très parisien, et sans charge de famille, songe à refuser, souhaitant rester au siège
-de Paris.
+Depuis huit ans, Thomas est salarié d'une entreprise de transport située à Paris. Son contrat comporte une clause de mobilité sur les régions Nord-Pas-de-Calais et Pays-de-Loire. Son employeur l'informe que, dans deux mois, celui-ci se verra muter à Lille, l'agence de Lille se développant et ayant besoin de personnes connaissant le fonctionnement de l'entreprise. Benoît, très parisien, et sans charge de famille, songe à refuser, souhaitant rester au siège de Paris.
 
 Que pouvez-vous lui dire ?
 
+Avoir plus de 20% (age et niveau de diplôme) et d'autre part on a le droit de rompre un contrat d'apprentissage après 45 jours
 ### Cas n°18
 
 Marion travaille depuis dix jours dans une société de courtage d'assurances en tant qu'hôtesse d'accueil. Elle remplace une salariée absente pour congé de maternité. Au onzième jour de travail, elle s'étonne de n'avoir pas signé de contrat de travail. Elle s'adresse au responsable de l'agence qui lui précise que son contrat est en cours de rédaction.
 
 Pouvez-vous informer Marion sur sa situation ?
 
+Comme le contrat n'as pas été signé, cela devient un CDI
 
 ## Exercice 3: vrai ou faux
 
@@ -191,3 +197,36 @@ Répondez par « vrai » ou « faux »
 28.  [x] Le contrat de travail à temps partiel est obligatoirement écrit.
 29.  [x] Le salarié en contrat d'apprentissage perçoit un salaire qui est un pourcentage du SMIC.
 30.  [ ] Le contrat nouvelles embauches est un contrat à durée indéterminée.
+
+## Exercice 4: Vrai ou faux
+1. [ ] Le contrat à durée déterminée (CDD) est forcément de date à date
+2. [ ] Aucun salarié sous CDD ne peut rester plus de 18 mois dans l'entreprise, renouvellement compris
+3. [ ] En cas de difficultés économiques, les salariés précaires pourront voir leur contrat rompu avant les permanents
+4. [ ] En cas de faute grave du salarié, l'employeur peut rompre immédiatement le contrat à durée déterminée
+5. [ ] Et a fortiori licencier le travailleur temporaire
+6. [x] Si l'employeur ne prouve pas la faute grave, le CDD obtiendra en justice versement de tous les salaires à courir, et même de l'indemnité de fin de contrat
+7. [x] L'indemnité de fin de contrat n'est pas due en cas de transformation du CDD en CDI
+8. [ ] En cas de cession d’entreprise, les salariés peuvent refuser de changer d’employeur
+9. [x] En cas de violation des règles relatives au CDD, ce dernier se transforme automatiquement en CDI. Si, par exemple, une entreprise a renouvelé deux fois un contrat de 8 mois (3 x 8), puis rompu un mois après le second renouvellement, le salarié ne pourra réclamer versement des sept mois à courir, puisqu'il sera sous CDI
+10. [ ] Si les salariés sous CDD sont décomptés dans les effectifs, mais aussi électeurs et éligibles dans l'entreprise, tel n'est pas le cas des travailleurs temporaires, par définition extérieurs à celle-ci
+10. [ ] n°2 : Modification du contrat et simple changement dans les conditions
+11. [x] Une clause de mobilité géographique peut à tout moment être proposée à un salarié déjà en poste
+12. [ ] S'il s'agit d'une clause ne modifiant pas les conditions actuelles du travail (exemple: clause de non-concurrence, préavis de licenciement moins long), le salarié ne peut refuser une telle insertion
+13. [x] Ces clauses sont applicables pendant toute la durée du contrat, même si la situation personnelle du salarié a radicalement changé
+14. [ ] Le salarié refusant la mise en œuvre d'une clause contractuelle peut être considéré comme démissionnaire
+15. [ ] Le niveau de la rémunération est un élément essentiel du contrat: la somme en bas à droite de la fiche de paie ne peut donc varier sans l'accord exprès du salarié
+16. [ ] L'entreprise est en droit de changer le mode de rémunération d'un salarié (exemple: abaissement du fixe, augmentation de la part variable), à la condition que la nouvelle rémunération soit plus favorable
+17. [ ] Embauchée comme caissière-vendeuse, une salariée ayant été caissière pendant vingt ans peut refuser de devenir vendeuse
+18. [ ] Le salarié peut toujours refuser un changement des horaires de travail, même s'il semble minime à l'entreprise (exemple: 15 minutes plus tôt le matin)
+19. [ ] La durée du travail est contractuelle: un salarié embauché pour l'horaire légal (exemple: 35 heures au 1er janvier 2000) peut donc refuser de faire des heures supplémentaires
+20. [x] Le salarié à temps partiel en revanche est en droit de refuser toute modification de la durée du travail
+21. [x] L'employeur ne pouvant imposer une modification du contrat, le salarié peut dans ce cas précis prendre acte de la rupture et se considérer comme licencié
+22. [ ] Le salarié ne se présentant plus au travail après un changement de ses conditions de travail ne sera plus payé
+23. [ ] Le refus d'un changement dans les conditions de travail constitue automatiquement une faute grave
+24. [ ] En l'absence d'une clause de mobilité, il conviendra d'examiner pour chaque personne visée si la mobilité collective (exemple: déménagement du siège) entraîne un bouleversement de sa vie personnelle
+25. [x] Si un accord collectif est signé modifiant les conditions contractuelles de rémunération (exemple: passage aux 35 heures), un salarié peut refuser de s'y soumettre
+26. [x] Si un usage salarial (exemple : 13ème mois) est régulièrement dénoncé par l'employeur, il disparaîtra sans que les salariés ne puissent y voir une modification de leur contrat puisqu'il s'agit d'une source collective
+27. [x] Sauf si l'avantage en cause a fait l'objet d'une contractualisation individuelle
+28. [x] En cas de modification du contrat pour motif économique, la non- réponse du salarié dans le mois qui suit à la proposition patronale par lettre recommandée vaut acceptation
+29. [x] Une réponse du type «J'accepte ma mutation, mais à la condition que» constitue en droit un refus
+30. [x] Les représentants du personnel peuvent refuser un simple changement dans leurs conditions de travail

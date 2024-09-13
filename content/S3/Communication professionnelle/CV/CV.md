@@ -9,3 +9,5 @@ Notes sur les CV en exemple: [[Note sur les CV]]
 ## Photographie
 
 [[Photographie professionnelle]]
+
+[[CV non traditionnels]]
