@@ -8,3 +8,4 @@ aliases:
 ## Liste des CheatSheet:
 - [[matplotlib Cheat Sheets.pdf]]
 - [[Pandas Basics Cheat Sheet.pdf]]
+- [[Github Actions CheatSheet.pdf]]
