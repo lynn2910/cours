@@ -16,6 +16,7 @@ Le développement backend se fait principalement avec NodeJS.
 - [[Basiques]]
 - [[POO]]
 - [[NodeJS & ecosystème]]
+- [[Développement asynchrone]]
 
 ## Développement front-end
 

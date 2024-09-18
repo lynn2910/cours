@@ -3,7 +3,7 @@ title: Communication professionnelle
 draft: false
 tags:
 ---
-## CV
-
-[[CV]]
-
+Liste des cours:
+- [[CV]]
+- [[Qualités et défauts]]
+- [[Lettre ou mail de motivation]]
