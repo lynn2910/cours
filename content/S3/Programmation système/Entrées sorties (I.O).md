@@ -194,7 +194,12 @@ int sscanf(const char* s, const char* format, ...)
 ```
 ### Bas-niveau
 
-> [!Warning] TODO
+L'interface est fournie par le système d'exploitation. Les descripteurs sont de type `int`.
+
+En particulier:
+- `0` pour l'entrée standard (STDIN_FILE)
+- `1` pour la sorte (STDOUT_FILE)
+- `2` pour la sortie d'erreur (STDERR_FILE)
 ## Pipelines
 
 > [!Warning] TODO
