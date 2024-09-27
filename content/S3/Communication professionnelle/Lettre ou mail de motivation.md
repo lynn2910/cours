@@ -102,3 +102,53 @@ Nécessaire:
 	- Discours, annonce, CV
 	- Dates du stage, agenda
 	- De quoi noter
+
+## Exemples
+
+
+Expliquez pour chaque exemple ci-dessous ce qui ne convient pas – le nombre de
+problèmes est indiqué à la fin de chaque exemple.
+
+
+« Je cherche un premier emploi » / « Je recherche avec ce stage une première expérience de terrain » (1 problème identique dans ces deux phrases)
+
+Hum
+
+« Je souhaite développer de nouvelles compétences grâce aux formations que vous proposez ». (1 problème)
+
+On ne parle pas de ce qu'on va obtenir à la fin du stage
+
+« Je suis issu d’un baccalauréat général avec les spécialités mathématiques et
+physique-chimie, et je viens d’obtenir mon BUT informatique à l’IUT de X. Durant mes deux années d’études, j’ai également acquis une expérience professionnelle dans l’entreprise Y ». (1 problème)
+
+"issu" ne convient pas et on n'as pas à préciser qu'on a le baccalauréat, car il sera dans le CV
+
+« Votre société est un acteur majeur de l’édition de logiciels, leader dans la région Nord-Pas-de-Calais, forte de 240 collaborateurs, et s’internationalisant. Vous intervenez auprès d’une clientèle de référence et vous êtes reconnue pour votre savoir-faire et votre expertise. C’est pourquoi je postule en tant qu’analyste-programmeuse junior ». (1 problème)
+
+Ils savent déjà ce que fait leur entreprise
+
+« Je me permets de vous proposer ma candidature au sein de votre entreprise en tant que stagiaire BUT. En effet, je souhaite vivement intégrer votre groupe pour lequel j’éprouve un réel intérêt, cela me permettra d’acquérir de nombreuses compétences. » (4 problèmes)
+
+1. "stagiaire BUT" → "stagiaire dans le cadre d'un BUT"
+2. "Je me permets de" → Donne l'impression d'un manque de confiance en soi
+3. "J'éprouve un réel intérêt" → Manque de détails
+4. "me permettra d'acquérir de nombreuses compétences" → même problème que le point **3**
+
+« Peut-être trouverez-vous dans mon CV ci-joint quelques compétences susceptibles d’être utiles à votre entreprise ». (4 problèmes)
+
+1. Eviter le "tennis de table" entre le CV et la lettre de motivation
+2. "Peut-être" → manque de confiance
+3. "Quelques" → manque de confiance
+4. "susceptibles" → manque de confiance
+
+
+« Durant le stage de huit à douze semaines que je dois effectuer, je vous apporterai les dernières connaissances concernant les méthodes employées. » (2 problèmes)
+
+1. Trop prétentieux, donne l'impression de "vous êtes trop vieux, je vais vous apprendre la vie". Met en doute les compétences de l'entreprise
+2. Le verbe "doit" montre un manque d'intérêt
+
+
+« Disponibilité, rigueur et sens du relationnel sont mes principales qualités pour ce poste ». (1 problème)
+
+Intégrer ces énonciations dans le cadre des projets, passions etc... Il faut **montrer** qu'on possède ces compétences.
+
