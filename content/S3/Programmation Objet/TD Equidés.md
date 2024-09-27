@@ -64,3 +64,19 @@ Règles:
 ## Objectif
 
 L'objectif est d'écrire la structure, les class et les méthodes tout en respectant le principe de polymorphisme
+
+| Classe  | Rencontre()   | Tracter() | courir() |
+| ------- | ------------- | --------- | -------- |
+| Equide  | Abstraite     |           |          |
+| Chevaux | Héritée (abs) |           |          |
+| Bardots | Définie       |           |          |
+| Anes    | Héritée (abs) |           |          |
+| Mules   | Définie       |           |          |
+| Etalon  | Définie       |           |          |
+| Jument  | Définie       |           |          |
+| Ane     | Définie       |           |          |
+| Anesse  | Définie       |           |          |
+| Mulet   | Héritée       |           |          |
+| Mule    | Héritée       |           |          |
+| Bardot  | Héritée       |           |          |
+| Bardine | Héritée       |           |          |

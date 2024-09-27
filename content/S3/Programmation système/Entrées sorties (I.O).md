@@ -192,6 +192,80 @@ int fscanf(File* f, const char* format, ...)
 // Depuis la chaîne à l'adresse primaire pointée par 's'
 int sscanf(const char* s, const char* format, ...)
 ```
+
+#### Remarques TP
+
+##### Exercice 1
+
+**Consignes:**
+
+Écrire une fonction :
+```c
+int copie(FILE *entree, FILE *sortie)
+```
+qui copie le contenu du fichier de descripteur entree dans le fichier de descripteur sortie. La fonction doit retourner le nombre d'octets copiés, ou -1 en cas d'erreur. La copie peut se faire par caractère avec getc() / putc() ou bien par bloc avec fread() / fwrite().
+
+Tester cette fonction en écrivant un programme principal l'utilisant avec la copie de deux fichiers : un fichier texte (par exemple le code source du programme), et un fichier binaire (par exemple un fichier exécutable). Vous pourrez utiliser la commande cmp(1) pour vérifier que la copie est conforme à l'original.
+
+**Code:**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Retourne le nombre de caractères copiés ou -1 si erreur
+int copie(FILE *entree, FILE *sortie) {
+	int nb_copies = 0;
+	int c = getc(entree);
+	while (c != EOF){
+		if (putc(c, sortie) == EOF)
+			break; // erreur, putc a échoué
+		c = getc(entree);
+		nb_copies++;
+	}
+
+	if (ferror(entree) || ferror(sortie)) {
+		return -1;
+	} else return nb_copies;
+}
+
+int main(int argc, char *argv[]) {
+	if (argc != 3) {
+		fprint(stderr, "Usage: %s entree sortie\n", argv[0]);
+		exit(1);
+	}
+
+	// arguments de la ligne de commande
+	const char *fichier_entree = argv[1];
+	const char *fichier_sortie = argv[2];
+
+	FILE *entree = fopen(fichier_entree, "r");
+	if (entree == NULL) {
+		perror("fopen(entree)");
+		exit(2);
+	}
+	FILE *sortie = fopen(fichier_sortie, "w");
+	if (sortie == NULL) {
+		perror("fopen(sortie)");
+		exit(2);
+	}
+
+	int n = copie(entree, sortie);
+	if (n >= 0){
+		printf("Copie de %d caractère(s)\n", n);
+	} else {
+		printf("Erreur de copie\n");
+	}
+
+	// fermeture des fichiers
+	if (fclose(sortie) != 0) {
+		perror("fclose(sortie)")
+	}
+	if (fclose(entree) != 0) {
+		perror("fclose(entree)");
+	}
+	return 0;
+}
+```
 ### Bas-niveau
 
 L'interface est fournie par le système d'exploitation. Les descripteurs sont de type `int`.
@@ -200,6 +274,8 @@ En particulier:
 - `0` pour l'entrée standard (STDIN_FILE)
 - `1` pour la sorte (STDOUT_FILE)
 - `2` pour la sortie d'erreur (STDERR_FILE)
+
+
 ## Pipelines
 
 > [!Warning] TODO
