@@ -5,14 +5,14 @@ tags:
 aliases:
   - Analyse et visualisation des données
 ---
-Cours: [[Analyse-Cours-Data-Analyse.pdf]] (182 diapos)
+Cours : [[Analyse-Cours-Data-Analyse.pdf]] (182 diapos)
 
-> [!Warning] Remarque
+> [!warning] Remarque
 > Le cours n'est pas terminé, il manque beaucoup de rédactions, informations et exemples.
 
 [[Diagrammes]]
 [[Données et informations]]
 
-## TDs
+## TD
 
-TD1: [[TD1.pdf]]
+TD1 : [[TD1.pdf]]

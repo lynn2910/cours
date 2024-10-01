@@ -6,37 +6,37 @@ tags:
 
 ## Combien de projets informatiques réussissent
 
-Peu de projets réussissent. Pour qu'un projet réussisse, il faut respecter trois points:
-- Lesquels? cout + délai + qualité
+Peu de projets réussissent. Pour qu'un projet réussisse, il faut respecter trois points :
+- Lesquels ? cout + délai + qualité
 
-Taux de réussite des projets IT (toute méthodologie confondue): 14% réussissent, 19% sont en échec et 67% en difficultés
+Taux de réussite des projets IT (toute méthodologie confondue) : 14% réussissent, 19% sont en échec et 67% en difficultés
 
-### Pourquoi un projet informatique échoue?
+### Pourquoi un projet informatique échoue ?
 
-Origine des défauts logiciels:
+Origine des défauts logiciels :
 - Besoins (57%)
 - Conception (22%)
 - Autres (13%)
 - code (8%)
 
-"pourquoi la phase amont de recueil des besoins génère-t-elle tant de défauts?": En grande partie parce que nous communiquons mal.
+"Pourquoi la phase amont de recueil des besoins génère-t-elle tant de défauts ?": En grande partie parce que nous communiquons mal.
 
-**Exemple:**
+**Exemple :**
 - Objectif non fixé clairement
 - Attentes du client non exprimées clairement
 - Besoins du client mal compris
 - ...
 
-**Exemple illustré:**
+**Exemple illustré :**
 ![[balancoire_projet.png]]
 
 D'où la nécessité de mettre à jour l'expression des besoins tout au long du projet.
 
-Deux raisons:
+Deux raisons :
 - Vérifier la compréhension
 - Tenir compte des changements et évolutions
 
-### Pourquoi est-ce difficile de communiquer?
+### Pourquoi est-ce difficile de communiquer ?
 
 | Commanditaire                                                                          | Prestataire                                                                        |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
@@ -47,23 +47,23 @@ Deux raisons:
 
 > [!example]- Exemple: La pizza à 8 parts avec 3 trait
 
-## Qu'est-ce que l'analyse du besoin?
+## Qu'est-ce que l'analyse du besoin ?
 
 L'analyse du besoin, c'est lister les objectifs à atteindre **ET** la mise au point concernant les attentes.
 
-**Ce que recouvre le besoin dans un projet IT:**
+**Ce que recouvre le besoin dans un projet IT :**
 - Fonction assurée par un système
 - Capacité du système à assurer efficacement cette fonction
-- Conditions opérationnelles (disponibilité, évolutivité, performances, ...)
-- Services associés (modalités d'exploitation, support utilisateur, ...)
-- Contraintes d'utilisation (ergonomie, organisation des utilisateurs, ...)
+- Conditions opérationnelles (disponibilité, évolutivité, performances…,)
+- Services associés (modalités d'exploitation, support utilisateur…,)
+- Contraintes d'utilisation (ergonomie, organisation des utilisateurs…,)
 
 > [!warning] Ce besoin peut être explicite, implicite, avoué ou inavoué, latent, potentiel...
 
-**Exemple:**
+**Exemple :**
 - Application fonctionnelle (implicite -> obligatoire)
 - Que les visiteurs puissent s'inscrire (obligatoire)
-- Application sécurisée: les robots ne peuvent pas s'inscrire (pas obligatoire: apporte une plus-value à l'entreprise)
+- Application sécurisée : les robots ne peuvent pas s'inscrire (pas obligatoire : apporte une plus-value à l'entreprise)
 
 > [!summary] Expression des besoins des parties prenantes essentielle pour estimer:
 > - La charge de travail
@@ -71,9 +71,9 @@ L'analyse du besoin, c'est lister les objectifs à atteindre **ET** la mise au p
 > - Les coûts du projet
 
 
-### Comment recueillir le besoin en évitant les écueils courants?
+### Comment recueillir le besoin en évitant les écueils courants ?
 
-Recueillir le besoin, c'est collecter des données:
+Recueillir le besoin, c'est collecter des données :
 - Données quantitatives (chiffres, catégories...)
 	- Sondages - Enquêtes
 	- Observations et comptages
@@ -84,9 +84,9 @@ Recueillir le besoin, c'est collecter des données:
 
 Besoins de qualités communicationnelles (écoute et questionnement)
 
-## Que signifie écouter?
+## Que signifie écouter ?
 
-Il y a plusieurs façons d'écouter:
+Il y a plusieurs façons d'écouter :
 
 | Type d'écoute     | Qu'est-ce?                                                                                                                                     |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,26 +95,26 @@ Il y a plusieurs façons d'écouter:
 | Ecoute projective | On reçoit le message, mais on pense d'abord à soi, on se projette, on applique ses filtres. Oreille égocentrique.                              |
 | Ecoute active     | On reçoit le message avec une attention soutenue, on vérifie qu'on le comprend. Oreille disponible, empathique.                                |
 
-**Exemple n°1:**
+**Exemple n°1 :**
 
-"Ma couleur préférée est le bleu":
-- "Quelle originalité!"
-- "Comme moi!"
-- "Le bleu est la couleur préférée de 80% des français"
+"Ma couleur préférée est le bleu" :
+- "Quelle originalité !"
+- "Comme moi !"
+- "Le bleu est la couleur préférée de 80% des Français"
 
-Mais quel bleu?
+Mais quel bleu ?
 
-**Exemple n°2:**
+**Exemple n°2 :**
 
-"Je pars faire mon stage à Berlin":
-- "Quelle veinarde!"
-- "Super! J'irai lui rendre visite!"
-- "Quelle horreur! Etre toute seule pendant trois mois sans rien comprendre!"
+"Je pars faire mon stage à Berlin" :
+- "Quelle veinarde !"
+- "Super ! J'irai lui rendre visite !"
+- "Quelle horreur ! Être toute seule pendant trois mois sans rien comprendre !"
 
 ### L'écoute active
 
-Cinq attributs à adopter pour pratiquer une écoute active:
-- Eviter tout à priori ou jugement de valeur
+Cinq attributs à adopter pour pratiquer une écoute active :
+- Éviter tout à priori ou jugement de valeur
 - Avoir une attention soutenue
 - Laisser parler sans interrompre
 - Ne pas mettre en doute, ni critiquer, ni contredire
@@ -123,32 +123,31 @@ Cinq attributs à adopter pour pratiquer une écoute active:
 L'écoute demande de s'oublier et de laisser de côté ses filtres.
 
 
-### Quelles sont les techniques d'écoute active
+### Quelles sont les techniques d'écoute active ?
 
-Ecoute -> reformulaiton -> clarification -> investigation
+Écoute -> reformulation -> clarification -> investigation
 
-Ecoute:
+Écoute :
 
-Formules qui marquent l'écoute:
+Formules qui marquent l'écoute :
 - Formules de compréhension
 - Formules écho (reprend tels quels les propose de l'autre)
-
-Investigation: Les questions pour relancer, demander des précisions, en savoir davantage:
+Investigation : : Les questions pour relancer, demander des précisions, en savoir davantage :
 - questions relais (s'appuie sur l'énoncé qui précède pour approfondir > donne une direction)
 - questions miroirs (reprend tels quels les propos de l'autre > plus de liberté)
 
-Reformuler: clarifier
+Reformuler : clarifier
 
 
-Si l'expression des besoins laisse la place à l'intérpretation, ca peut produire pour le projet:
+Si l'expression des besoins laisse la place à l'interprétation, ça peut produire pour le projet :
 1. Des difficultés
 2. Des discussions qui auraient pu être évitées
-3. L'échec dans le pire des cas
+3. L'échec dans le pire des cas.
 
-Bien définir les besoins, attentes et exigences des parties prenantes du projet:
+Bien définir les besoins, attentes et exigences des parties prenantes du projet :
 1. De transformer les besoins en objectifs clairs
 2. De transformer ceux-ci en livrables convenant au client
-3. D'établir un cahier des charges solide
+3. D'établir un cahier des charges solides
 4. De planifier le projet dans le détail
 
 ## Recueillir le besoin de l'utilisateur
