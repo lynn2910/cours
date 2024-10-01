@@ -71,7 +71,8 @@ export default {
 > [!danger] Failles de sécurité
 > Ne **JAMAIS** utiliser `v-html` avec une variable entrée ou pouvant être modifiée par l'utilisateur. Cela permettrait d'injecter du code Javascript
 
-## v-bind
+## Directives
+### v-bind
 
 Cette directive permet de dire à VueJS de placer la variable dans le DOM.
 
@@ -121,63 +122,111 @@ On peut également définir des attributs tel que `readonly`, les class mais aus
 > Je dois rédiger la suite
 
 
-2.3°/ relation bidirectionnelle : v-model
+### v-model: liaison bi-directionnelle
 
-- Si la valeur du champ de saisie change, il serait pratique que la valeur du champ de data qui sert à alimenter le champ de saisie change en retour. Cette relation bidirectionnelle peut être mise ne place grâce à la directive v-model.
-- Cette directive s'applique aux différents type de balise <input>. On peut donc l'utiliser sur des champs de saisie mais aussi des boutons radio et cases à cocher.
-- On peut également l'utiliser avec la balise \<select>
+Jusqu'à présent, nous avons vu comment afficher des données depuis notre objet data dans le template à l'aide de l'interpolation de texte (`{{ }}`) et de la directive **v-bind**. Cependant, il est souvent nécessaire d'établir une relation plus interactive entre le template et les données : lorsque l'utilisateur modifie une valeur dans le template, cette modification doit être répercutée dans l'objet data.
 
-_Démonstration :_
+**C'est là qu'intervient la directive `v-model`**. Elle permet de créer une liaison bidirectionnelle entre un élément du template (comme un champ de saisie, un bouton radio, une case à cocher ou une liste déroulante) et une propriété de l'objet data.
 
-- Copier le fichier TD2Demo3.vue dans TD2Demo.vue
-- lancer npm run serve puis visualiser le résultat dans le navigateur (par ex. [http://localhost:8080](http://localhost:8080))
-- Montrer le code de TD2Demo3.
-- on constate que le bouton radio n°0 est bien sélectionné => relation type v-bind de selectedItem vers <input> fonctionne toujours.
-- cliquer sur un autre bouton radio : le nom de l'item sélectionné change => relation de <input> vers selectedItem fonctionne également.
-- sélectionner un prix d'item => la liste des prix change, signe que le champ de data a bien été modifié en retour.
+**Exemple**
+```vue
+<template>
+  <input type="text" v-model="message">
+  <p>Vous avez tapé : {{ message }}</p>
+</template>
 
-2.4°/ affichage de "listes" : v-for
+<script>
+export default {
+	name: "Exemple4",
+	data() {
+		return {
+		    message: 'Hello, world!'
+	    }
+    }
+}
+</script>
+```
 
-- Dans la démonstration précédente, on remarque que le code devient très vite redondant dès lors que l'on manipule des éléments d'un tableau.
-- Fort heureusement, vuejs propose la directive v-for permettant d'itérer sur un tableau ou sur les champs d'un objet pour instancier plusieurs fois une même balise, mais avec des valeurs d'attribut différentes.
-- Grâce à la balise \<div> sur laquelle on utilise v-for, on peut même répéter plusieurs fois plusieurs balises.
-- La syntaxe v-for est multiple, selon qu'on l'applique à un tableau, un objet, que l'on désire récupérer les indices dans le tableau, les noms de champs dans l'objet. Quelques exemples :
-    - v-for = "el in tab" : el prendra successivement comme valeur chaque élément de tab
-    - v-for = "(el, idx) in tab" : idem et idx vaudra 0, 1, ...
-    - v-for = "(val, name, idx) in obj" : val prendra successivement comme valeur chaque valeur de champ dans obj, name sera le nom de champ et idx vaudra 0,1, ...
-- Dans ces exemples, le nom des itérateurs est au choix du développeur. On peut donc remplacer el, idx, val, name par ce que l'on veut, du moment qu'on l'utilise dans le reste de la (ou les) balise(s) utilisant v-for.
+> [!tip] Utilisation courante
+> On retrouvera cette directive en général dans les **input**, **checkboxes**, **bouton radio** et **select**.
 
-- IMPORTANT : lorsque l'on utilise la configuration par défaut créée par vue-cli, l'utilisation de v-for sur une balise implique de donner une valeur à son attribut key. Comme il faut que cette valeur soit différente pour chaque balise créée avec v-for, on utilise très souvent l'index comme valeur (cf. démonstration).
+### v-for: afficher des 'listes'
 
-_Démonstration :_
+Lorsqu'on souhaite afficher un ensemble d'éléments similaires, comme une liste d'articles, une série de cartes ou une table de données, il devient rapidement fastidieux de répéter manuellement chaque élément dans le template. **Vue.js** propose une solution élégante pour résoudre ce problème : la **directive `v-for`**.
 
-- Copier le fichier TD2Demo4.vue dans TD2Demo.vue
-- lancer npm run serve puis visualiser le résultat dans le navigateur (par ex. [http://localhost:8080](http://localhost:8080))
-- Montrer le code de TD2Demo4.
-- Cet exemple fait la même chose que le précédent, avec en plus, le parcours des champs de l'item sélectionné.
-- On remarque que pour le v-for du \<div> qui affiche la liste des items, on a pas besoin de fixer l'attribut key pour les balises répétées mais juste dans \<div>.
-- On remarque également que les attributs id et for utilisés dans ce \<div> sont cette fois affectés grâce à v-bind. Normal car leur valeur doit être différente pour chaque entrée de la liste à puce. donc elle est calculée grâce à une expression javascript.
-- Enfin, même si on ne gagne pas beaucoup de lignes de code pour cet exemple, on imagine aisément le gain lorsque le tableau que l'on doit parcourir a plusieurs dizaine/centaines d'éléments. Qui plus est, v-for fonctionne toujours, même si la taille du tableau évolue !
+`v-for` permet d'itérer sur un tableau ou un objet, et de générer dynamiquement du contenu en fonction des éléments de cette structure de données. Cela permet de créer des listes, des tableaux, et bien d'autres éléments réutilisables.
 
-_Remarques :_
+La syntaxe est la suivante:
+```vue
+<element v-for="(item, index) in items" :key="key"></element>
+```
 
-- on peut imbriquer des v-for. C'est particulièrement utile lorsque l'on veut générer une balise \<table>, par ex, à partir un tableau dont les éléments contiennent eux-mêmes des tableaux
-- pour nue même balise, on peut utiliser conjointement v-for et v-bind, par exemple pour passer des valeurs d'attributs différentes selon l'instance de la balise.
-- v-for s'applique à toute balise HTML mais aussi celles des composants.
+> [!warning] L'attribut `:key`
+> Quand on utilise la directive **v-for**, il est **impératif** d'ajouter l'attribut `:key=".."` qui sera une valeur unique, par exemple l'index, ou l'identifiant d'un utilisateur.
+> On évitera **à tout prix** l'index quand la liste peut-être réordonnée, trier, ou si des éléments peuvent être ajoutés/supprimés **au milieu** de la liste.
+> 
+> Plus d'informations: [stackoverflow](https://stackoverflow.com/questions/44531510/why-not-always-use-the-index-as-the-key-in-a-vue-js-for-loop)
 
-2.5°/ affichage conditionnel : v-if, v-else-if, v-else  
+On a plusieurs possibilités d'utilisations:
 
-- Grâce à v-bind, on peut générer des changements de valeur/style conditionnels.
-- En revanche, cela ne permet pas de carrément changer de balise de façon conditionnelle.
-- Pour cela, il existe les directives v-if, v-else-if, qui prennent en paramètre une expression JS (comme les moustache et v-bind), et v-else, qui n'a pas de paramètre.
-- Ces directives permettent de créer dans le DOM un ou plusieurs éléments en fonctions de l'évaluation true ou false de l'expression.
-- Attention ! ces directives ne s'appliquent qu'à la balise où elles apparaissent. Cela implique que sauf exception, le rendu conditionnel ne fonctionnera pas sur des balises imbriquées.
-- Parmi les exceptions : balises \<div> et \<template>.
+**Itérer sur un `Array`:**
+```vue
+<ul>
+  <li v-for="(fruit, index) in fruits" :key="index">
+    {{ index + 1 }}. {{ fruit }}
+  </li>
+</ul>
+```
 
-_Démonstration :_
+**Itérer sur un Object:**
+```vue
+<ul>
+  <li v-for="(value, key, _index) in person" :key="key">
+    {{ key }}: {{ value }}
+  </li>
+</ul>
+```
 
-- Copier le fichier TD2Demo5.vue dans TD2Demo.vue
-- lancer npm run serve puis visualiser le résultat dans le navigateur (par ex. [http://localhost:8080](http://localhost:8080))
-- Montrer le code de TD2Demo5.
-- La première partie de la page illustre le fait que les balises utilisé dans v-if, v-else-if et v-else peuvent être différentes.
-- La seconde partie illustre l'utilisation de v-if sur \<div>. C'est le seul moyen (avec template) de rendre conditionnel l'affichage de tout un ensemble de balises. Bien entendu, celles-ci doivent être imbriquées dans \<div>
+> [!tip] Plusieurs remarques:
+> 1. On peut imbriquer des **v-for**, c'est très utile pour les tables par exemple.
+> 2. On peut utilise **v-for**, **v-bind** et **v-model** ensemble, par exemple avec des boutons radios.
+> 3. **v-for** peut s'appliquer à tout balise HTML (`div`, `p`, `option`, ...) mais aussi à tout les composants VueJS (`ShopCard`, `PrestatairePresentation`, ...)
+
+### Affichage conditionnel: v-if, v-else, v-else-if
+
+Ces directives permettent de contrôler l'affichage d'éléments dans le DOM en fonction d'une condition booléenne.
+
+- **`v-if`:** Affiche un élément si l'expression associée est évaluée à `true`.
+- **`v-else-if`:** Doit suivre un `v-if` ou un autre `v-else-if`. Il est affiché si toutes les expressions précédentes sont fausses et que la sienne est vraie.
+- **`v-else`:** Doit suivre un `v-if` ou un `v-else-if`. Il est affiché si toutes les expressions précédentes sont fausses.
+
+**Exemple:**
+```vue
+<template>
+	<!-- Première condition -->
+	<div v-if="showParagraph">
+	    <p>Ce paragraphe s'affiche si showParagraph est vrai.</p>
+	</div>
+	<div v-else-if="showOtherParagraph">
+		<p>Ce paragraphe s'affiche si showParagraph est faux et showOtherParagraph est vrai.</p>
+	</div>
+	<div v-else>
+		<p>Aucun des deux paragraphes ne s'affiche.</p>
+	</div>
+</template>
+
+<script>
+export default {
+	name: "Exemple5",
+	data() {
+		return {
+			showParagraph: true,
+			showOtherParagraph: false
+		}
+	}
+}
+</script>
+```
+
+> [!warning] Porté de ces directives
+> Ces 3 directives conditionnelles s'appliquent à l'élément (HTML ou composant) où elle est déclarée, et donc à tout les enfants de cet élément.
