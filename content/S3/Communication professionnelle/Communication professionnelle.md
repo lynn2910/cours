@@ -11,6 +11,7 @@ Liste des cours:
 - [[Qualités et défauts]]
 - [[Lettre ou mail de motivation]]
 - [[Recueil des besoins]]
+- [[Analyser une offre d'emploi]]
 
 
 ## Documents utiles

@@ -10,4 +10,4 @@ aliases:
 Les différents TDs:
 - [[TD1]]
 - [[TD2.1]]
-- ..
+- [[TD2.2]]
