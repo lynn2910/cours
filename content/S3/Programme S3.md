@@ -24,7 +24,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - Développement efficace
 - [[Analyse]]
 - Qualité de développement:
-	- [[Programmation Objet]]
+- [[Programmation Objet]]
 - [[Programmation système]] (C/C++)
 - Architecture réseaux
 - SQL et programmation
@@ -39,11 +39,10 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 
 ## SAE
 
-> [!Summary|wide-3 min-0] Sujet
-> Le sujet de la SAE n'est pas encore tombé.
-
 La SAE se déroulera pendant le semestre [S3](Programme S3) et [S4](Programme S4).
 
 Les coefficients seront les suivants:
 - S3: 45% de la moyenne finale
 - S4: 15% de la moyenne finale
+
+*Voir [[Présentation SAE]]*
