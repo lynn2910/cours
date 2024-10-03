@@ -30,7 +30,7 @@ Un processus est une instance dynamique d'un programme en cours d'exécution, qu
 ## État d'un processus
 
 Durant son exécution, un processus peut-être dans un des trois états suivants : (principaux états, valables pour tous les OS)
-- **Actif : Un processeur lui a été attribué. Ce dernier exécute une partie de son code.
+- **Actif**: Un processeur lui a été attribué. Ce dernier exécute une partie de son code.
 - **Activable :** Il est prêt à être exécuté, il dispose de toutes les ressources nécessaires hormis un processeur.
 - **En attente/bloqué :** Un évènement extérieur, ou une ressource est nécessaire à son exécution
 
@@ -69,9 +69,38 @@ Ce descripteur sert à gérer le processus tout au long de son cycle de vie. Enf
 
 Il existe deux façons de terminer un programme : Son destin peut être de **s'éteindre paisiblement** après avoir exécuté son code, ou d'être **abruptement interrompu** en cas de problème ou de [[#Signal]].
 
-Lorsque un processus termine son exécution, le système d'exploitation procède à un nettoyage systématique : les blocs de mémoire, les fichiers ouverts, les périphériques réservés et autres ressources sont libérés, rendant ces ressources disponibles pour d'autres processus. De plus, le descripteur de processus, qui contenait toutes les informations relatives au processus, est détruit, marquant ainsi sa disparition définitive du système.
+Lorsqu'un processus termine son exécution, le système d'exploitation procède à un nettoyage systématique : les blocs de mémoire, les fichiers ouverts, les périphériques réservés et autres ressources sont libérés, rendant ces ressources disponibles pour d'autres processus. De plus, le descripteur de processus, qui contenait toutes les informations relatives au processus, est détruit, marquant ainsi sa disparition définitive du système.
 ### Signal
 
+Un signal, dans le contexte des systèmes d'exploitation comme Linux, est une forme de communication asynchrone entre processus. C'est un peu comme une interruption logicielle qui vient perturber le flux normal d'exécution d'un processus pour signaler un événement particulier.
+
+
+#### Utilité
+
+Les signaux servent à :
+- **Notifier un événement:** Par exemple, un signal peut indiquer à un processus qu'il a reçu une interruption clavier (Ctrl+C), qu'un fichier est devenu accessible ou qu'une erreur s'est produite.
+- **Terminer un processus:** Certains signaux sont utilisés pour demander à un processus de se terminer de manière ordonnée ou de manière abrupte.
+- **Suspendre ou reprendre un processus:** Les signaux peuvent être utilisés pour mettre un processus en pause ou pour le redémarrer.
+
+#### Les principaux signaux
+
+Voici une liste non exhaustive des principaux signaux :
+- **SIGTERM:** Demande de terminaison normale.
+- **SIGINT:** Interruption par le clavier (Ctrl+C).
+- **SIGKILL:** Terminaison immédiate (ne peut pas être interceptée).
+- **SIGSEGV:** Erreur de segmentation (accès mémoire illégal).
+- **SIGABRT:** Appel à la fonction `abort()`.
+- **SIGALRM:** Expiration d'une alarme.
+- **SIGCHLD:** Terminaison d'un processus enfant.
+
+#### La réaction du processus
+
+Un processus peut :
+- **Ignorer le signal:** Le signal n'a aucun effet.
+- **Exécuter un gestionnaire de signal:** Le processus exécute une fonction spécifique pour traiter le signal.
+- **Terminer:** Le processus s'arrête.
+
+Les fonctions `signal()` et `sigaction()` permettent de définir le comportement d'un processus face à un signal donné. Par exemple, on peut utiliser ces fonctions pour installer un gestionnaire de signal qui sera exécuté lorsque le processus recevra un SIGINT.
 
 ## Arborescence des processus
 
