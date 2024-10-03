@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"02cda6074d0ae9e7","x":125,"y":140,"width":250,"height":60,"type":"text","text":"Bac de récolte"},
+		{"id":"5e9765d4bbe855db","x":160,"y":0,"width":250,"height":60,"type":"text","text":"Sprint"},
+		{"id":"1a46674bc98f0391","x":-60,"y":-280,"width":250,"height":50,"type":"text","text":"Bac de départ"},
+		{"id":"6f10925e07430469","x":-400,"y":-120,"width":250,"height":60,"type":"text","text":"bac de culture"},
+		{"id":"dfd0f2c764855c59","x":-275,"y":0,"width":250,"height":60,"type":"text","text":"Bac à sable"},
+		{"id":"a78d9dd362a67ca3","x":-220,"y":140,"width":250,"height":60,"type":"text","text":"Bac à glace"}
+	],
+	"edges":[
+		{"id":"979a96b9f026daff","fromNode":"5e9765d4bbe855db","fromSide":"bottom","toNode":"02cda6074d0ae9e7","toSide":"top"},
+		{"id":"b2bfc68ea17cfec7","fromNode":"1a46674bc98f0391","fromSide":"right","toNode":"5e9765d4bbe855db","toSide":"top"}
+	]
+}
