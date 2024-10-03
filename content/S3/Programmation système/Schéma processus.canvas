@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"e3f5198610e52e19","x":-80,"y":-40,"width":145,"height":50,"color":"1","type":"text","text":"Bloqué"},
+		{"id":"f3e2c45f90b45772","x":65,"y":145,"width":250,"height":50,"color":"4","type":"text","text":"Actif"},
+		{"id":"25b10f0db98e9034","x":-330,"y":145,"width":250,"height":50,"color":"2","type":"text","text":"Activable"},
+		{"id":"3b5a71a3cfb76fec","x":-680,"y":140,"width":250,"height":60,"type":"text","text":"Création"},
+		{"id":"7fb251bec971188b","x":400,"y":140,"width":250,"height":60,"type":"text","text":"Terminaison"}
+	],
+	"edges":[
+		{"id":"8fd667c8f7ad5388","fromNode":"25b10f0db98e9034","fromSide":"right","toNode":"f3e2c45f90b45772","toSide":"left","color":"4"},
+		{"id":"9f60f78d601177bd","fromNode":"e3f5198610e52e19","fromSide":"left","toNode":"25b10f0db98e9034","toSide":"top","color":"2"},
+		{"id":"7273a454dcc92127","fromNode":"f3e2c45f90b45772","fromSide":"top","toNode":"e3f5198610e52e19","toSide":"right","color":"1"},
+		{"id":"48f4c690dda5232a","fromNode":"f3e2c45f90b45772","fromSide":"top","toNode":"25b10f0db98e9034","toSide":"top","color":"3"},
+		{"id":"be9742e481a6a972","fromNode":"3b5a71a3cfb76fec","fromSide":"right","toNode":"25b10f0db98e9034","toSide":"left"},
+		{"id":"7d59aadbc7ae7b14","fromNode":"f3e2c45f90b45772","fromSide":"right","toNode":"7fb251bec971188b","toSide":"left"}
+	]
+}
