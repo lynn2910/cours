@@ -7,5 +7,7 @@ tags:
 
 - [[Rappel Java]]
 - [[Exceptions]]
-- Travail sur le polymorphisme: [[TD Equidés]]
+- Travail sur le polymorphisme : [[TD Equidés]]
+- [[Interfaces]]
+- [[Expressions lambda]]
 

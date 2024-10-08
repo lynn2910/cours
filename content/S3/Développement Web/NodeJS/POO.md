@@ -103,7 +103,7 @@ Object.getOwnPropertyNames(...)
 
 ## Itérateurs
 
-On a déjà vu comment déclarer des boucles ([[content/S3/Développement Web/NodeJS/Basiques#Boucles]]), mais prenons le cas suivant:
+On a déjà vu comment déclarer des boucles ([[Rappels Javascript#Boucles]]), mais prenons le cas suivant:
 
 Nous devons filtrer les étudiant qui ne passeront pas l'année, trier les étudiants par nom et renvoyer la liste des noms + prénoms.
 

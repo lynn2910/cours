@@ -44,7 +44,7 @@ La valeur entre `{{ }}` permet d'y intégrer une expression JavaScript. On est d
 
 > [!warning]+ Limitations
 > On ne peut pas utiliser les mot-clés de contrôle (if, for, while, ...).
-> Pour intégrer une condition ternaire, voir [[Basiques#Conditions ternaires]]
+> Pour intégrer une condition ternaire, voir [[Rappels Javascript#Conditions ternaires]]
 > Les opérateurs logiques et arithmétiques sont en revanche utilisables.
 
 ## Intégrer du HTML
