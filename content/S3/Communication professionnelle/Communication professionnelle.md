@@ -13,6 +13,7 @@ Liste des cours:
 - [[Recueil des besoins]]
 - [[Analyser une offre d'emploi]]
 - [[Entretien de recrutement]]
+- [[Lettres de motivation et expression]]
 
 
 ## Documents utiles

@@ -4,7 +4,7 @@ draft: false
 tags: 
 u:
 ---
-Cours: [[3_qualites_defauts.pdf]]
+Cours: [[content/S3/Communication professionnelle/CV/3_qualites_defauts.pdf]]
 
 ## Une importance relative
 
