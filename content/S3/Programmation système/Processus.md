@@ -138,3 +138,90 @@ gid_t getegid(void); // Renvoie le GID effectif du processus
 ```
 
 **L'égalité entre UID réel et effectif (et GID réel et effectif) n'est pas toujours une évidence.** En effet, le système d'exploitation Linux offre des mécanismes pour modifier temporairement ces identifiants, offrant ainsi une flexibilité accrue en termes de gestion des droits d'accès.
+
+## Recouvrement de processus
+
+**Fork :** Duplique un processus existant, créant ainsi un nouveau processus fils qui est une copie quasi-conforme du processus père.
+
+**Système d'appel exec :** Permet de remplacer le code et les données d'un processus en cours d'exécution par ceux d'un nouveau programme.
+
+**Caractéristiques conservées et modifiées lors d'un exec :**
+- **Conservées :** PID du processus parent (PPID), UID, GID, descripteurs de fichiers (sauf ceux ouverts avec le flag `O_CLOEXEC`), signaux en attente.
+- **Modifiées :** Code du processus, données, PID (le nouveau processus reçoit un nouveau PID), arguments de ligne de commande, variables d'environnement.
+
+### La primitive de recouvrement : `execvr`
+```c
+#include <unistd.h>
+
+int execve(const char* filename, char* const argv[], char* const envp[]);
+```
+
+**Fonctionnement :**
+Charge et exécute le programme binaire spécifié par `filename`. Le processus appelant est remplacé par le nouveau processus. L'exécution commence à la fonction `main` du nouveau programme.
+
+**Paramètres :**
+- **filename :** Chemin absolu ou relatif vers le fichier binaire à exécuter.
+- **argv :** Tableau de chaînes de caractères représentant les arguments de la ligne de commande. Le premier élément `argv[0]` est généralement le nom du programme. Le dernier élément doit être un pointeur nul.
+- **envp :** Tableau de chaînes de caractères de la forme "nom=valeur" représentant les *variables d'environnement* du nouveau processus. Le dernier élément doit être un pointeur nul.
+
+
+**Retour :**
+- `-1` en cas d'échec
+- En cas de succès, la fonction ne retourne pas ! (le code a été remplacé)
+
+> [!summary]- Remarques
+> La variable d'environnement [[Variables d'environnement#PATH]] n'est pas utilisée pour trouver l'exécutable. Il faut définir son chemin (absolu ou relatif).
+> 
+> Le fichier doit être exécutable par l'utilisateur (droit `x`).
+> 
+> Si le fichier possède le bit de prise d'identité (`set uid`), alors le propriétaire effectif du processus est le propriétaire du fichier.
+
+**Exemple :**
+
+Exécution de `ls -l` avec le nom de fichier passé en argument.
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        fprintf(stderr, "Usage: %s fichier\n", argv[0]);
+        return 1;
+    }
+
+    char *arg[4];
+    
+    // Initialiser les arguments
+    arg[0] = "ls";
+    arg[1] = "-l";
+    arg[2] = argv[1]; // Le nom du fichier
+    arg[3] = NULL;
+
+    // Exécution de 'ls -l <fichier>'
+    if (execve("/bin/ls", arg, environ) == -1) {
+        perror("execve");
+        free(arg);
+        return 1;
+    }
+
+    // Ce code ne sera jamais atteint si execve réussit
+    free(arg);
+    return 0;
+}
+```
+
+**Variantes de `execve`:**
+- avec un `p`: la variable `PATH` est utilisé pour trouver l'exécutable
+- avec un `e`: On peut spécifier l'environnement.
+
+| Commande | Signature                                                              | Utilisation                                     |
+| -------- | ---------------------------------------------------------------------- | ----------------------------------------------- |
+| execl    | `int execl(const char* path, const char* arg, ... /* (char*) NULL */)` | arguments passés par liste d'arguments          |
+| execlp   | `int execlp(const char* file, const char* arg, ...)`                   |                                                 |
+| execle   | ...                                                                    |                                                 |
+| execv    | ...                                                                    | arguments passés avec un tableau (ou *vecteur*) |
+| execvp   | ...                                                                    |                                                 |
+| execvpe  | ...                                                                    |                                                 |
+
