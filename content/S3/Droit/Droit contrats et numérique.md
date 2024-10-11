@@ -13,3 +13,5 @@ Les différents TDs:
 - [[TD2.2]]
 - [[Cas de synthèse 1]]
 - [[TD rémunération]]
+- [[Travail méthodologique]]
+- [[Salariés et Internet]]
