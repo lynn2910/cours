@@ -13,11 +13,8 @@ tags: []
 ## Développement Backend
 
 Le développement backend se fait principalement avec NodeJS.
-- [[Rappels Javascript]]
-- [[POO]]
-- [[NodeJS & ecosystème]]
-- [[Développement asynchrone]]
-- [[Développement d'une API avec Express]]
+
+Cours et ressources : [[NodeJS]]
 
 ## Développement front-end
 

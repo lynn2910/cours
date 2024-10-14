@@ -230,7 +230,7 @@ const arr1 = [];
 const arr2 = new Array();
 ```
 
-Pour la seconde méthode, voir [[POO]]
+Pour la seconde méthode, voir [[POO en Javascript]]
 
 Voici un exemple:
 ```js
@@ -322,7 +322,7 @@ L'avantage d'un object est qu'il permet de structurer les données de nombreuses
 > Son efficacité vient du fait qu'il est très efficace d'associer une clé à une référence mémoire. Il n'est pas nécessaire de stocker les données dans un Array qu'il faudra parcourir.
 > Quand on accède à une clé, on va directement recevoir son adresse mémoire, ce qu'il le rend très rapide.
 > 
-> La structure de donnée `Map` (voir [[POO]]) est similaire à l'exception que la clé peut être de tout type (Object, array, instance de class, ...) et possède des méthodes plus "haut-niveau" (.get, .set, ...) alors qu'un object est plus "primitif" et ses clés seront en général des chaines de caractères et nombres.
+> La structure de donnée `Map` (voir [[POO en Javascript]]) est similaire à l'exception que la clé peut être de tout type (Object, array, instance de class, ...) et possède des méthodes plus "haut-niveau" (.get, .set, ...) alors qu'un object est plus "primitif" et ses clés seront en général des chaines de caractères et nombres.
 
 #### Méthodes utiles
 
