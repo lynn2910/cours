@@ -15,8 +15,13 @@ Le stage ne se déroule pas en S3 mais en S4.
 
 ## SAE
 
-[[Présentation SAE]]
+La SAE se déroulera pendant le semestre [[Programme S3|S3]] et [[Programme S4|S4]].
 
+Les coefficients seront les suivants:
+- S3: 45% de la moyenne finale
+- S4: 15% de la moyenne finale
+
+*Voir [[Présentation SAE]]*
 ## Programme du semestre
 
 Au cours de ce semestre, les technologies et cours suivants seront vus:
@@ -36,13 +41,3 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Droit contrats et numérique]]
 - Anglais
 - [[Communication professionnelle]]
-
-## SAE
-
-La SAE se déroulera pendant le semestre [S3](Programme S3) et [S4](Programme S4).
-
-Les coefficients seront les suivants:
-- S3: 45% de la moyenne finale
-- S4: 15% de la moyenne finale
-
-*Voir [[Présentation SAE]]*
