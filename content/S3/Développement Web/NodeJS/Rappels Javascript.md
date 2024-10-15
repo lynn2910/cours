@@ -1,7 +1,7 @@
 ---
-title: Basiques
+title: Rappels Javascript
 draft: false
-tags: []
+tags:
 ---
 ## Déclaration de variable
 

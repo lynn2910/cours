@@ -10,4 +10,4 @@ tags:
 - Travail sur le polymorphisme : [[TD Equidés]]
 - [[Interfaces]]
 - [[Expressions lambda]]
-
+- [[Généricité]]
