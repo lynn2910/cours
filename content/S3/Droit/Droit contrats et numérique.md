@@ -15,3 +15,4 @@ Les différents TDs:
 - [[TD rémunération]]
 - [[Travail méthodologique]]
 - [[Salariés et Internet]]
+- [[Propriété intellectuelle]]
