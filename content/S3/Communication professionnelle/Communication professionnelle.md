@@ -14,6 +14,8 @@ Liste des cours:
 - [[Analyser une offre d'emploi]]
 - [[Entretien de recrutement]]
 - [[Lettres de motivation et expression]]
+- [[Entretien de recrutement & tests de sélection]]
+- [[Réseaux sociaux (RSP)]]
 
 
 ## Documents utiles
