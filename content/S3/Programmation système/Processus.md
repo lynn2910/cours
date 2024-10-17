@@ -5,6 +5,9 @@ tags:
 aliases:
   - process
 ---
+> [!danger]- J'ai tenté de corriger le cours, mais certains mots que le prof a écrits au tableau sont illisibles
+> En cas d'erreur, je veux bien en être informé pour corriger ça.
+
 ## Définition
 
 Un processus est une instance dynamique d'un programme en cours d'exécution, qui se matérialise par une image mémoire évolutive.
@@ -73,8 +76,6 @@ Lorsqu'un processus termine son exécution, le système d'exploitation procède 
 ### Signal
 
 Un signal, dans le contexte des systèmes d'exploitation comme Linux, est une forme de communication asynchrone entre processus. C'est un peu comme une interruption logicielle qui vient perturber le flux normal d'exécution d'un processus pour signaler un événement particulier.
-
-
 #### Utilité
 
 Les signaux servent à :
@@ -100,8 +101,16 @@ Un processus peut :
 - **Exécuter un gestionnaire de signal:** Le processus exécute une fonction spécifique pour traiter le signal.
 - **Terminer:** Le processus s'arrête.
 
-Les fonctions `signal()` et `sigaction()` permettent de définir le comportement d'un processus face à un signal donné. Par exemple, on peut utiliser ces fonctions pour installer un gestionnaire de signal qui sera exécuté lorsque le processus recevra un SIGINT.
+Les fonctions `signal()` et `sigaction()` permettent de définir le comportement d'un processus face à un signal donné. Par exemple, on peut utiliser ces fonctions pour créer un gestionnaire de signal qui sera exécuté lorsque le processus recevra un SIGINT ou d'autres signaux.
 
+### Agir sur les processus
+
+#### Tuer le process
+
+Pour tuer un processus, on peut utiliser la méthode `kill`:
+```c
+int kill(pid_t pid, int sig);
+```
 ## Arborescence des processus
 
 Le noyau Linux crée une structure arborescente de processus, où chaque nœud représente un processus. Le processus racine, **init**, est le point de départ de cette arborescence. Chaque processus, à l'exception de **init**, est lié à un processus parent par son PPID, formant ainsi une relation parent-enfant entre les processus.
@@ -225,3 +234,73 @@ int main(int argc, char *argv[]) {
 | execvp   | ...                                                                    |                                                 |
 | execvpe  | ...                                                                    |                                                 |
 
+## Redirections
+
+Les redirections permettent de rediriger les flux standards (*voir [[Entrées sorties (I.O)]]*) depuis/vers d'autres fichiers/flux.
+
+Cela peut se faire de deux manières :
+### Par ouverture d'un fichier en l'associant à un descripteur de haut-niveau
+
+Avec :
+```c
+FILE* freopen(const char* path, const char* mode, FILE* stream);
+```
+
+Cette méthode permet d'ouvrir un fichier (comme avec [[Entrées sorties (I.O)#API Haut-niveau|fopen]]) mais nécessite la **fermeture** du descripteur `stream` donné (qui doit être compatible avec le mode d'ouverture : lecture ou écriture) **une fois les opérations sur le fichier terminées.**
+
+**Exemple :**
+```c
+File* redir;
+
+redir = freopen("/tmp/sortie.txt", "w", stdout);
+if (redir == NULL){
+	// Erreur
+}
+
+printf("Coucou");
+```
+
+> [!tip] Le descripteur `stream` est fermé si nécessaire
+
+### En modifiant le descripteur bas-niveau
+
+Cela se fait avec les primitives `dup()` ou `dup2()`
+
+C'est la méthode la plus générale qui consiste à dupliquer un descripteur existant.
+Cette méthode fonctionne quelle que soit la sortie du descripteur (fichier, [[Entrées sorties (I.O)#Pipelines|tubes (pipelines)]], socket réseau…,).
+
+Le principe général est le suivant :
+1. Création d'un descripteur avec `open()`
+2. Fermeture du descripteur à rediriger
+3. Duplication du descripteur valide avec `dup()`
+4. Fermeture du descripteur utilisé pour la redirection.
+
+> [!tip] Remarques
+> 1. L'étape `1` est inutile si le descripteur existe déjà (ex. [[Entrées sorties (I.O)#Pipelines|tubes (pipelines)]], socket réseau...,)
+> 2. L'étape `4` est facultative
+> 3. Les étapes `2` et `3` peuvent être combinées en utilisant la méthode `dup2()`
+
+
+**Primitives :**
+```c
+#include <unistd.h>
+
+int dup(int oldfd);
+int dup2(int oldfd, int newfd);
+```
+
+**dup:** Duplique le descripteur `oldfd` dans le premier descripteur disponible.
+
+**dup2:** Duplique `oldfd` dans le descripteur `newfd` qui est fermé si besoin.
+
+**Exemple:**
+```c
+int fd = creat("/tmp/sortie.txt", "0640"); // (1)
+close(STDOUT_FILENO) // (2)
+dup(fd); // 3
+close(fd); // 4
+```
+
+### Remarques
+
+Les redirections restent en place après un fopen/exec, (sauf si le fichier a été ouvert avec `O_CLOEXEC`). C'est par exemple utilisé par le shell.
