@@ -16,6 +16,7 @@ Liste des cours:
 - [[Lettres de motivation et expression]]
 - [[Entretien de recrutement & tests de sélection]]
 - [[Réseaux sociaux (RSP)]]
+- [[Utilisation de ChatGPT]]
 
 
 ## Documents utiles

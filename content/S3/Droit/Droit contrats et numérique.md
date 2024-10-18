@@ -16,3 +16,5 @@ Les différents TDs:
 - [[Travail méthodologique]]
 - [[Salariés et Internet]]
 - [[Propriété intellectuelle]]
+- [[Que peut-on breveter]]
+- [[Révisions]]
