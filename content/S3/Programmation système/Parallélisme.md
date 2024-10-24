@@ -5,8 +5,6 @@ tags:
 aliases:
   - threads
 ---
-> [!tip] Aussi appelé `Threads`
-
 ## Principe
 
 Les threads permettent d'avoir plusieurs fils d'exécution au sein d'un processus qui s'exécutent en même temps.
