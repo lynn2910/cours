@@ -1,9 +1,10 @@
 ---
 title: Langages de programmation
-draft: true
+draft: false
 tags:
 ---
 Ce dossier contient des informations, resources et cours sur différents langages de programmations:
-- [[Rust]]
-- ..
-- ..
+
+> [!todo] TODO
+
+
