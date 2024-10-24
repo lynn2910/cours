@@ -7,7 +7,7 @@ Différentes parties :
 - [[Rappels C]]
 - [[Entrées sorties (I.O)]]
 - [[Processus]]
-- [[Parallélisme]]
+- [[Threads]]
 
 Ressources supplémentaires :
 - [[Variables d'environnement]]

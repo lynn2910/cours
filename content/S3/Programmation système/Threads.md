@@ -37,7 +37,9 @@ Il y a de nombreux intérêts :
 - **Mémoire partagée :** Une zone de mémoire accessible par tous les threads d'un processus.
 - **Planificateur :** Le composant du système d'exploitation qui décide quel thread doit s'exécuter à un moment donné. (*voir [[#Threads systèmes]]*)
 
+
 ***
+
 
 ## Mise en œuvre (C)
 
@@ -107,7 +109,9 @@ int main() {
 
 *Voir [[#Attendre un thread]] pour la fonction `pthread_join`*
 
+
 ***
+
 ## Mise en œuvre (Java)
 
 *Ressource utile : [www.w3schools.com](https://www.w3schools.com/java/java_threads.asp)*
@@ -155,7 +159,9 @@ public class ThreadExample {
 }
 ```
 
+
 ***
+
 ## Types de threads
 
 ### Threads systèmes
@@ -174,6 +180,8 @@ Imaginez une voiture avec plusieurs passagers. Chaque passager représente un th
 
 - **Coût :** La création et la gestion de threads systèmes peuvent être coûteuses en termes de ressources système.
 - **Complexité :** La programmation avec des threads systèmes peut être plus complexe, car il faut gérer explicitement la synchronisation et les communications entre les threads.
+
+***
 
 ### 'Green' threads
 
@@ -194,13 +202,24 @@ Imaginez une troupe de théâtre où chaque acteur représente un 'green' thread
 - **Blocage :** Si un 'green' thread est bloqué (par exemple, en attendant une entrée/sortie), tous les autres 'green' threads du même processus peuvent être bloqués, parce que l'ordonnanceur utilisateur ne peut pas passer à un thread système.
 
 
+
+***
+
+
 ## Partage de données et la data-concurrence
 
 Partager les mêmes données entre plusieurs threads peut être TRÈS dangereux.
 
 ### Race condition
 
-> [!todo] TODO
+Une **race condition** survient lorsqu'un programme multithread accède à des données partagées de manière non atomique et que le résultat final dépend de l'ordre d'exécution imprévisible de ces accès. En d'autres termes, c'est une situation où deux ou plusieurs threads tentent de modifier une même donnée en même temps, et le résultat final dépend de l'ordre dans lequel ces modifications sont effectuées.
+
+Imaginez un compteur partagé par deux threads. Chaque thread incrémente ce compteur plusieurs fois. Si les deux threads lisent la valeur actuelle du compteur en même temps, puis l'incrémentent, et enfin écrivent la nouvelle valeur, il est possible que l'une des incrémentations soit perdue. Par exemple, si les deux threads lisent la valeur 0, l'incrémentent et écrivent la valeur 1, le compteur final affichera 1 au lieu de 2, car l'une des incrémentations a été écrasée.
+
+**Pourquoi c'est problématique ?**
+- **Résultats imprévisibles :** Le comportement du programme devient non déterministe, c'est-à-dire qu'il peut produire des résultats différents à chaque exécution, même avec les mêmes entrées.
+- **Difficulté de débogage :** Les race-conditions sont souvent difficiles à reproduire et à corriger, car elles dépendent de facteurs tels que le temps d'exécution et le planificateur du système.
+- **Bugs subtils :** Les erreurs causées par les race-conditions peuvent être très subtiles et difficiles à détecter, surtout dans des programmes complexes.
 
 #### Exemple
 
@@ -218,9 +237,26 @@ Lorsque plusieurs threads accèdent à une même ressource partagée (ici, la va
 ***
 ### Deadlock
 
-> [!todo] TODO
+Un **deadlock** (impasse en français) est une situation dans laquelle deux ou plusieurs threads sont bloqués indéfiniment, chacun attendant qu'un autre libère une ressource qu'il détient. C'est une forme de blocage mutuel qui peut paralyser complètement une application multithread.
 
-### Mécanismes de protection face aux deadlocks et aux race conditions
+#### Exemple concret
 
-> [!todo] TODO
+Imaginez deux philosophes assis autour d'une table ronde, chacun avec une fourchette dans chaque main. Pour manger, un philosophe a besoin des deux fourchettes à côté de lui. Si chaque philosophe prend sa fourchette gauche, puis attend que sa fourchette droite se libère, aucun d'eux ne pourra jamais manger, car ils attendent tous que l'autre libère sa fourchette.
+
+**Les quatre conditions nécessaires pour qu'un deadlock se produisent :**
+1. **Exclusion mutuelle :** Une ressource ne peut être utilisée que par un seul thread à la fois.
+2. **Attente circulaire :** Un ensemble de threads attendent chacun une ressource détenue par le thread suivant de l'ensemble.
+3. **Non-privation :** Un thread ne peut pas se faire retirer une ressource qu'il détient.
+4. **Attente :** Un thread doit attendre une ressource détenue par un autre thread.
+
+#### Conséquences d'un deadlock:
+- **Blocage de l'application :** L'application peut devenir complètement inutilisable si les threads bloqués sont essentiels à son fonctionnement.
+- **Perte de ressources :** Les ressources détenues par les threads bloqués sont inutilisables jusqu'à ce que le deadlock soit résolu.
+- **Difficulté de débogage :** Les deadlocks peuvent être difficiles à détecter et à reproduire, car ils dépendent souvent de l'ordre d'exécution des threads.
+
+### Mécanismes de protection face aux deadlocks et aux race-conditions
+
+> [!todo] Je dois m'en occuper, voici quelques ressources en attendant
+> - https://stackoverflow.com/questions/34524/what-is-a-mutex
+> - https://www.baeldung.com/cs/what-is-mutex
 
