@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"9ee9648980297014","type":"text","text":"Saisie des informations complètes","x":160,"y":40,"width":250,"height":60},
+		{"id":"607d7b77a9cef56a","type":"text","text":"Affectation Annonce/Stage","x":160,"y":-55,"width":250,"height":60},
+		{"id":"a9a3a1c1c9dc3016","type":"text","text":"Edition fiche préparatoire à convention","x":160,"y":160,"width":250,"height":60},
+		{"id":"960a41d43b8bb333","type":"text","text":"Demande d'affectation","x":160,"y":-160,"width":250,"height":60},
+		{"id":"041ffbb844b319bc","type":"text","text":"Validation pédagogique","x":-140,"y":-160,"width":250,"height":60},
+		{"id":"408585199086e101","type":"text","text":"Création annonce du stage","x":-140,"y":-55,"width":250,"height":60},
+		{"id":"66a95291a6255908","type":"text","text":"Validation d'entreprise","x":-140,"y":40,"width":250,"height":60},
+		{"id":"6ea1b4197a24bb12","type":"text","text":"Création d'entreprise","x":-440,"y":40,"width":250,"height":60},
+		{"id":"209cf4175f535e02","type":"text","text":"Saisie des informations minimales","x":-440,"y":-50,"width":250,"height":50},
+		{"id":"b7c956ec01ebd671","type":"text","text":"Recherche du stage","x":-440,"y":-160,"width":250,"height":60},
+		{"id":"008825d288d02272","type":"text","text":"Transmission au responsable stage","x":-140,"y":160,"width":250,"height":60},
+		{"id":"6fb0963b85c6e396","x":520,"y":-160,"width":250,"height":60,"type":"text","text":"Edition de la convention"},
+		{"id":"68dc86e96a238d39","x":520,"y":-55,"width":250,"height":60,"type":"text","text":"Signature étudiant"},
+		{"id":"47a47a68f1a14b47","x":520,"y":40,"width":250,"height":60,"type":"text","text":"Signature responsable stages"},
+		{"id":"461fb0ae580f2521","x":820,"y":-160,"width":220,"height":60,"type":"text","text":"Retour secrétariat"},
+		{"id":"46d3e62f4bfbde00","x":820,"y":-55,"width":220,"height":60,"type":"text","text":"Signature entreprise"},
+		{"id":"477fa89e2f3f694c","x":820,"y":40,"width":220,"height":60,"type":"text","text":"Envoie électronique au secrétariat"},
+		{"id":"b9d9464b9648d66e","x":1100,"y":-160,"width":250,"height":60,"type":"text","text":"Signature direction IUT"},
+		{"id":"f3c8570a6bdf3d0f","x":1100,"y":-55,"width":250,"height":195,"type":"text","text":"Impression 3 exemplaires:\n- Envoi entreprise\n- Remise étudiant\n- Conservation administration"}
+	],
+	"edges":[
+		{"id":"8c4d0cc457a0e01b","fromNode":"a9a3a1c1c9dc3016","fromSide":"left","toNode":"008825d288d02272","toSide":"right"},
+		{"id":"40d5c79b3b1e2fbb","fromNode":"9ee9648980297014","fromSide":"bottom","toNode":"a9a3a1c1c9dc3016","toSide":"top"},
+		{"id":"67b2769969697845","fromNode":"607d7b77a9cef56a","fromSide":"bottom","toNode":"9ee9648980297014","toSide":"top"},
+		{"id":"94af8faf208bebf8","fromNode":"960a41d43b8bb333","fromSide":"bottom","toNode":"607d7b77a9cef56a","toSide":"top"},
+		{"id":"2f0ff777dea1fd09","fromNode":"041ffbb844b319bc","fromSide":"right","toNode":"960a41d43b8bb333","toSide":"left"},
+		{"id":"845f5558a56732f7","fromNode":"408585199086e101","fromSide":"top","toNode":"041ffbb844b319bc","toSide":"bottom"},
+		{"id":"b104285ed2e0cc21","fromNode":"66a95291a6255908","fromSide":"top","toNode":"408585199086e101","toSide":"bottom"},
+		{"id":"e5dfff3cca6777cc","fromNode":"6ea1b4197a24bb12","fromSide":"right","toNode":"66a95291a6255908","toSide":"left"},
+		{"id":"4b6b0e153db3ecaf","fromNode":"209cf4175f535e02","fromSide":"bottom","toNode":"6ea1b4197a24bb12","toSide":"top"},
+		{"id":"c5e01fcf28cb7191","fromNode":"209cf4175f535e02","fromSide":"right","toNode":"408585199086e101","toSide":"left"},
+		{"id":"2635ba5c0ac834c0","fromNode":"b7c956ec01ebd671","fromSide":"bottom","toNode":"209cf4175f535e02","toSide":"top"},
+		{"id":"5660e432a60e8a85","fromNode":"6fb0963b85c6e396","fromSide":"bottom","toNode":"68dc86e96a238d39","toSide":"top"},
+		{"id":"94a35eb6f21acac5","fromNode":"68dc86e96a238d39","fromSide":"bottom","toNode":"47a47a68f1a14b47","toSide":"top"},
+		{"id":"8d4c4304a06a26ce","fromNode":"47a47a68f1a14b47","fromSide":"right","toNode":"477fa89e2f3f694c","toSide":"left"},
+		{"id":"c8daa3e1607c0d5a","fromNode":"477fa89e2f3f694c","fromSide":"top","toNode":"46d3e62f4bfbde00","toSide":"bottom"},
+		{"id":"1b35abf4073e20b0","fromNode":"46d3e62f4bfbde00","fromSide":"top","toNode":"461fb0ae580f2521","toSide":"bottom"},
+		{"id":"ef6d4496ac9c4c45","fromNode":"461fb0ae580f2521","fromSide":"right","toNode":"b9d9464b9648d66e","toSide":"left"},
+		{"id":"ecea3b6e058c2fbf","fromNode":"b9d9464b9648d66e","fromSide":"bottom","toNode":"f3c8570a6bdf3d0f","toSide":"top"}
+	]
+}

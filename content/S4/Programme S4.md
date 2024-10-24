@@ -6,6 +6,8 @@ date: 2024-08-30
 ---
 ## Stage
 
+*voir [[Stage]]*
+
 8 à 12 semaines sont dédiées aux stages.
 
 **Le stage comptera pour ==45%== de la note de S4.**
