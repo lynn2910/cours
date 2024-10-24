@@ -12,7 +12,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "umami",
+      host: "lynn.chamallow.xyz",
+      websiteId: "133b4858-0242-4e15-83a4-77be524aebe4"
     },
     locale: "fr-FR",
     baseUrl: "lynn.chamallow.xyz/cours",
