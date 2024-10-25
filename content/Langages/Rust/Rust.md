@@ -4,5 +4,6 @@ draft: false
 tags:
   - langage
 ---
-> [!todo] TODO
+> [!tip] Des connaissances sur le fonctionnement des ordinateurs sont recommandées
 
+[[Ressources]]
