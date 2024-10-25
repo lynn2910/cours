@@ -10,9 +10,9 @@ Ce dossier contient des informations, ressources et cours sur différents langag
 | Langage (avec lien) | Utilité                                                             | Type de langage | Couverture des ressources | Paradigme                             |
 | ------------------- | ------------------------------------------------------------------- | --------------- | ------------------------- | ------------------------------------- |
 | [[Rust]]            | Bas-niveau, intégré, programmes nécessitant des hautes performances | Compilé         | 0%                        | Fonctionnel, Orienté Objet, Impératif |
-| Java                | Bas-niveau, APIs, algorithmie, programmation orientée objet         | Compilé (JVM)   | 0%                        | Orienté Objet                         |
-| Javascript          | Web, APIs                                                           | Interprété      | 0%                        | Fonctionnel, Orienté Objet, Impératif |
-| Python              | APIs, Algorithmies, Scripting                                       | Interprété      | 0%                        | Fonctionnel, Orienté Objet, Impératif |
+| [[Java]]            | Bas-niveau, APIs, algorithmie, programmation orientée objet         | Compilé (JVM)   | 0%                        | Orienté Objet                         |
+| [[Javascript]]      | Web, APIs                                                           | Interprété      | 0%                        | Fonctionnel, Orienté Objet, Impératif |
+| [[Python]]          | APIs, Algorithmies, Scripting                                       | Interprété      | 0%                        | Fonctionnel, Orienté Objet, Impératif |
 
 ---
 
