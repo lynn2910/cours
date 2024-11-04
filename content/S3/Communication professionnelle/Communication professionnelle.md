@@ -17,6 +17,7 @@ Liste des cours:
 - [[Entretien de recrutement & tests de sélection]]
 - [[Réseaux sociaux (RSP)]]
 - [[Utilisation de ChatGPT]]
+- [[L'écriture web]]
 
 
 ## Documents utiles
