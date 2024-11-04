@@ -18,7 +18,8 @@ Liste des cours:
 - [[Réseaux sociaux (RSP)]]
 - [[Utilisation de ChatGPT]]
 - [[L'écriture web]]
-
+- [[Jobboards]]
+- [[Neuf étapes dans la recherche de stage]]
 
 ## Documents utiles
 
