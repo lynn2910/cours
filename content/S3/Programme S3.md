@@ -41,3 +41,5 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Droit contrats et numérique]]
 - Anglais
 - [[Communication professionnelle]]
+- [[PPP|Projet Personnel et professionnel (PPP)]]
+

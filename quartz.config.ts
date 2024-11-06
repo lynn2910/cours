@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       websiteId: "133b4858-0242-4e15-83a4-77be524aebe4"
     },
     locale: "fr-FR",
-    baseUrl: "lynn.chamallow.xyz/cours",
+    baseUrl: "lynn.chamallow.fr/cours",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
