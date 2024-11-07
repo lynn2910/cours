@@ -31,7 +31,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Qualité dev|Qualité développement]]
 - [[Programmation Objet]]
 - [[Programmation système]] (C/C++)
-- Architecture réseaux
+- [[Architecture réseau]]
 - SQL et programmation
 - [[Probabilités]]
 - [[Cryptographie]]
