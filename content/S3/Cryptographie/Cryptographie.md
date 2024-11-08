@@ -26,7 +26,7 @@ Intégrité des données: infos non changées, s'assurer que les données n'ont 
 
 Disponibilité du service: Se prémunir contre les attaques suivantes:
 - [[DoS & DDoS]]
-- ...
+- [[Attaques Web]]
 ## Sécurité
 
 Tout les algorithmes peuvent être analysés (voir [[Analyse de Sécurité]])

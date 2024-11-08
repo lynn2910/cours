@@ -26,7 +26,7 @@ Les coefficients seront les suivants:
 
 Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Développement Web]]
-- Développement efficace
+- [[Développement Efficace]]
 - [[Analyse]]
 - [[Qualité dev|Qualité développement]]
 - [[Programmation Objet]]
