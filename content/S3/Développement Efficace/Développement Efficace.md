@@ -5,4 +5,6 @@ tags:
 ---
 Ressources:
 - [[Représenter des listes]]
+- [[Les collections]]
+- [[Les arbres]]
 

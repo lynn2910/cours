@@ -84,9 +84,70 @@ public class List {
 		size++;
 		return newCell;
 	}
+
+	public Cell removeAt(int index){
+		if ((index < 0) || (index >= size)) return null;
+
+		Cell removed = null;
+		if (index == 0){
+			removed = head
+			head = head.next;
+		} else {
+			Cell c = get(index - 1);
+			removed = c.next
+			c.next = c.next.next;
+		}
+		size -= 1;
+		return removed;
+	}
+
+	// Version non-efficace
+	public Cell remove(int value){
+		Cell c = head;
+		int i = 0;
+		while ((c != null) && (c.value != value)){
+			c = c.next;
+			i++;
+		}
+		if (c != null) {
+			c = removeAt(i);
+		}
+		return c;
+	}
+
+	// Version efficace
+	public Cell remove(int value){
+		Cell c = head;
+		Cell p = null; // précédente
+		while ((c != null) && (c.value != value)){
+			p = c;
+			c = c.next;
+		}
+		
+		if (c != null){
+			if (c == head){
+				c = c.next;
+			} else {
+				p.next = c.next;
+			}
+			size--;
+		}
+		
+		return c;
+	}
 }
 ```
 
 > [!tip] Utiliser la généricité
 > Il est possible d'utiliser la généricité, mais pour des raisons de simplicités, ça n'as pas été fait dans ce code.
+
+## Listes chainées en C
+
+**Définition de la structure de donnée :**
+```c
+typedef struct cell {
+	       int   value;
+	struct cell* next;
+} Cell;
+```
 
