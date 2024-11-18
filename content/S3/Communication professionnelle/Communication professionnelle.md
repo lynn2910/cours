@@ -9,17 +9,12 @@ aliases:
 Liste des cours:
 - [[CV]]
 - [[Qualités et défauts]]
-- [[Lettre ou mail de motivation]]
+- [[Lettre de motivation]]
 - [[Recueil des besoins]]
-- [[Analyser une offre d'emploi]]
-- [[Entretien de recrutement]]
-- [[Lettres de motivation et expression]]
-- [[Entretien de recrutement & tests de sélection]]
-- [[Réseaux sociaux (RSP)]]
 - [[Utilisation de ChatGPT]]
 - [[L'écriture web]]
-- [[Jobboards]]
-- [[Neuf étapes dans la recherche de stage]]
+- [[Recherche d'emploi]]
+- [[Conduite de réunion]]
 
 ## Documents utiles
 

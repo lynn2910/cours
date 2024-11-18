@@ -28,7 +28,7 @@ Origine des défauts logiciels :
 - ...
 
 **Exemple illustré :**
-![[balancoire_projet.png]]
+![[content/S3/Communication professionnelle/assets/balancoire_projet.png]]
 
 D'où la nécessité de mettre à jour l'expression des besoins tout au long du projet.
 

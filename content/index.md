@@ -17,7 +17,6 @@ Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suiv
 
 ## Resources
 
-- [[Créer son portfolio]]
 - [[Liste de CheatSheet]]
 - [[Langages et frameworks]]
 
