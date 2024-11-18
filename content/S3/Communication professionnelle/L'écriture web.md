@@ -34,6 +34,7 @@ La qualité du contenu et son optimisation sont indispensables pour qu'un site s
 
 ![[clics-postion-google-serp.jpg]]
 
+---
 ## Préparation de la rédaction
 
 ### Quatre objectifs pour la rédaction web
@@ -113,9 +114,30 @@ Mots-clés les plus souvent employés = besoin des utilisateurs
 
 **Titre 3 : preuve de ce qu'on dit + persona
 
-
+---
 ## Rédaction d'un article sur un site web
 
+**Rédaction :** paragraphes clairs, consistants, concis
+
+**Clarté :**
+- Clarté : Phrases simples
+- allant directement à l'essentiel
+- sans erreurs d'expression
+
+**Consistance :**
+- Apporter une information supplémentaire dans chaque phrase : ni redite, ni information inutile.
+
+**Concision :**
+- phrase et paragraphes courts
+- Listes à puces en cas d'énumération
+	- Briser de gros blocs
+	- rendre les articles complexes plus faciles à saisir
+	- faire ressortir les idées clés
+
+### Objectifs
+
+1. **Être compris aisément :** une seule idée par paragraphe.
+2. **Commencer chaque paragraphe par la phrase la plus importante :** possible de résumer chaque paragraphe en ne lisant que la première phrase.
 ### Avant de rédiger
 
 1. Il faut noter la structure de l'article et l'avoir toujours sous les yeux.
@@ -135,4 +157,123 @@ Mots-clés les plus souvent employés = besoin des utilisateurs
 - sites avec liens externes mieux référencés
 
 **Organiser son texte pour les lecteurs ET moteurs de recherche**
+
+### Rédaction d'articles attractifs
+
+1. **Difficulté de lecture sur Internet:** 25% plus difficile que sur papier car web interactif
+2. **Difficulté de capter l'attention de gens saturés d'informations:**
+	- lecture d'un texte jusqu'au bout: 20% des internautes
+	- moins de 15s sur un site: 55% des visiteurs
+	- texte scanné au lieu d'être lu mot à mot (rechercher des mots clés): 80% des gens
+
+Il y a une nécessité d'attirer l'oeil en dosant bien les effets:
+- Aérer son texte
+- apparition des titres uniquement - en cliquant "en savoir plus", accès au reste
+- intertitres
+- etc.
+
+Accentuer les éléments importants:
+- couleurs
+- mise en gras
+- taille
+- tableaux
+- listes à puces: éléments de même longueur:
+	- uniformité agréable à l'oeil
+	- liste moins chargée
+
+Il faut peaufiner le titre et l'accroche pour inciter le lecture à lire l'introduction.
+
+Les pages sont explorées indépendamment de leur longueur:
+- forces du haut de page déterminant l'envie d'explorer
+- si l'intérêt est grand, la lecture du reste s'ensuit
+
+![[Pasted image 20241118102640.png]]
+
+> [!tip] Avoir une structure claire et se distinguer grâce à un brin de créativité
+
+### Rédaction d'un article sur un site web
+
+**Principe de base: information claire et concise.**
+Eliminer les mots non essentiels: souvent entre 5 et 9 mots:
+- moins d'efforts cognitifs
+- titres longs s'adaptant mal aux tailles de conteneurs variables et plus de risques d'être tronquées sur de petits écrans
+- possible de scinder un titre en deux pour apporter plus d'informations: surtitre ou sous-titre
+
+**Autre règle importante: indiquer un bénéfice:** Rendre service ou résoudre un problème
+
+**Autres conseils, mais sans certitude quant à leur efficacité :**
+- Contenir des nombres
+- Utiliser un superlatif, de préférence négatif
+- Véhiculer la notion d'urgence
+- Comporter le mot "comment"
+- Intriguer
+- Se terminer par un point d'interrogation pour intriguer
+- S'adresser au lecteur... ou pas : études contradictoires sur ce point.
+
+## Page d'accueil de son site à soigner
+
+### Objectif
+
+1. Saisis immédiate par les visiteurs de l'ADN de l'entreprise, des services ou des produits
+2. Résumer clairement ces éléments en deux ou trois phrases
+
+
+Première visite sur un site, découvrir rapidement:
+- qui est l'entreprise, l'association...
+- ce qu'elle fait
+- en quoi elle est différente
+
+> [!example]- Contre-exemple et conseils
+> Compliqué de savoir qui est Soliswiss et quelle est son activité:
+> - association? assurance? autre?
+> 
+>Seul point positif: le public cible du site clairement identifié
+
+## Conseils pour faciliter la lisibilité
+
+### Disposer les éléments sur la page:
+
+- F-pattern et front loading
+- Structure de texte et scan visuel étroitement liés
+- Nouvelles mises en page, nouveau modèle
+
+> [!tip]+ Types de patterns
+> ![[1-different-scanning-patterns.jpeg]]
+> ![[f_reading_pattern_eyetracking_nngroup.jpg]]
+
+#### Front loading
+
+Yeux du lecteur fixés plus longuement sur le premier tiers d'un bloc textuel (titre, accroche ou paragraphe)
+
+**Faire apparaitre l'information clé à cet endroit**
+
+#### Structure en E
+
+Quand le paragraphe de conclusion est mis en valeur.
+
+#### Lecture plus linéaire
+
+Lecteurs lisant titres et sous-titres
+
+#### Nouvelles mises en page, nouveau modèle:
+
+Popularité croissante des tableaux de comparaison + des mises en page en zigzag.
+
+> [!tip] Images et vidéos attirant le regard
+
+
+### Choisir une police
+
+**Certaines polices sont plus rapidement lisibles que d'autres:**
+- Aucune ne convenant à tout le monde
+
+![[16-fonts-reading-speed.png]]
+
+## Conclusion
+
+Ecrire sur internet = écrire bien
+
+de façon dense: dire un maximum de choses avec un minimum de mots.
+
+Après un **travail de mise en page intelligente** permettant une lecture rapide.
 
