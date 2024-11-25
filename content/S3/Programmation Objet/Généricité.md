@@ -33,6 +33,8 @@ class Class2<X, Y, Z> { ... }
 
 En pratique, la liste ne comprend le plus souvent qu'un seul type générique.
 
+### Types autorisés
+
 > [!warning] Attention
 > En Java, contrairement au C++, les types génériques sont forcément des classes et pas des types fondamentaux
 > 
