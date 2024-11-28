@@ -32,9 +32,3 @@ Si IP est l'adresse de la maison, TCP est le livreur qui s'assure que le colis a
 
 ---
 ## UDP
-
----
-## Sockets
-
-Les sockets sont l'équivalent de *[[Entrées sorties (I.O)#Descripteurs de fichiers|descripteurs de fichiers]]* et permettent d'interragir avec le **stream**. Le **stream** est le lien entre les deux machines, qui va permettre de lire et écrire des données.
-

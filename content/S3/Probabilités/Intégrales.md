@@ -38,7 +38,6 @@ Notre fonction `f` a donc bien une **densité de probabilité** sur $[0; 1]$
 > Pour être une densité de probabilité, elle doit être strictement égale à 1
 
 
-
 On peut alors effectuer des probabilités dessus.
 
 Si nous voulons connaitre $P(X<0.5)$:
