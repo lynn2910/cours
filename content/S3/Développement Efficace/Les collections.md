@@ -100,3 +100,62 @@ aa = list.get(0);
 
 int index = list.indexOf(b); // Renvoie `1`
 ```
+
+## HashMap
+
+### Méthodes
+| Méthode                 | Action                                                                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `V put(K key, V value)` | Ajoute/modifie un couple `(clé, valeur)`.<br>Si la clé existe déjà, l'ancienne valeur est remplacée par la nouvelle |
+| `V get(Object key)`     | Renvoie l'objet associé à la clé `key`<br>si elle existe ou `null`                                                  |
+| `V remove(Object key)`  | Supprimer la valeur associée à la clé                                                                               |
+| `Set<K> keySet()`       | Renvoie un `Set` des clés                                                                                           |
+### Utilisation.
+
+```java
+Map<String, A>  map1 = new HashMap<>();
+Map<A, Integer> map2 = new HashMap<>();
+
+A a1 = new A();
+A a2 = new A();
+Date d = new Date();
+
+map1.put("toto", a1);
+map1.put("toto", a2); // remplace a1 par a2
+map1.put("a1", "toto"); // Erreur de compilation: pas le même type
+
+map2.put(a1, new Integer(10));
+map2.put(d, new Integer(5));
+
+map2.containsKey(d); // renvoie false
+map2.containsKey(a1); // renvoie true
+map2.remove(d); // Ne fait rien
+map1.remove("toto"); // Renvoie a2
+map2.remove(a1); // Renvoie 10
+```
+
+## ArrayDeque
+
+### File
+
+| Méthodes             | Action                                                                                  |
+| -------------------- | --------------------------------------------------------------------------------------- |
+| `boolean offer(E a)` | Ajoute `e` en fin de queue                                                              |
+| `E pull()`           | Supprime et renvoie l'élément en tête de queue.<br>Si la queue est vide, renvoie `null` |
+### Pile
+
+| Méthodes         | Action                                                                                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `void push(E a)` | Ajoute en tête de queue                                                                                              |
+| `E pop()`        | Supprime en renvoie l'élément de tête de queue.<br>Contrairement à `pull`, provoque une erreur si la queue est vide. |
+### Utilisation
+
+```java
+Queue<Double> q = new ArrayDeque<>();
+
+q.offer(1);
+q.offer(2);
+
+int val = q.poll(); // renvoie '1'
+```
+
