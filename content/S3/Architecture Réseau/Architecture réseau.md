@@ -4,6 +4,6 @@ draft: false
 tags:
 ---
 Ressources :
-- [[content/S3/Architecture Réseau/Introduction|Introduction]]
+- [[Introduction Réseau]]
 - [[Serveur de fichiers]]
 - [[Utilisation des fonctions systèmes]]

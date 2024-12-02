@@ -1,4 +1,4 @@
-Pour voir les bases : [[content/S3/Méthode agile/Introduction|Introduction]]
+Pour voir les bases : [[Introduction Agile|Introduction Agile]]
 
 ## Socket
 
