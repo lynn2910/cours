@@ -3,7 +3,7 @@ title: Les arbres
 draft: false
 tags:
 ---
-# Noeud
+# Nœud
 
 Pour implémenter un Noeud en Java:
 ```java
@@ -90,3 +90,46 @@ int treeDepth(Node n){
 }
 ```
 
+## Parcours en profondeur d'abord
+
+```java
+public List<Node> getNodePerLevel(Node n, int level){
+	List<Node> list = new ArrayList<>();
+	if (level == 0) {
+		list.add(n);
+	} else if (level > 0){
+		int current = 1;
+		Node separ = new node(-9999);
+
+		Queue<Node> queue = new ArrayQueue<>();
+		for (Node f: n.children) {
+			queue.offer(f);
+		}
+		queue.offer(separ);
+
+		while (!queue.isEmpty()){
+			Node p = queue.poll();
+			
+			if (p == separ){
+				if (current == level)
+					return list;
+				else {
+					currentLevel += 1;
+					queue.offer(separ);
+				}
+			} else {
+				if (current == level) {
+					list.add(p);
+				} else {
+					for (Node f: p.children){
+						queue.offer(f);
+					}
+				}
+			}
+			
+		}
+		// Fin du while
+	}
+	return list;
+}
+```
