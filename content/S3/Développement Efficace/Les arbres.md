@@ -133,3 +133,70 @@ public List<Node> getNodePerLevel(Node n, int level){
 	return list;
 }
 ```
+
+## Obtenir la largeur maximale
+
+```java
+public int nbNodesByLevel(Node n, int currentLevel, int searchLevel){
+	if (currentLevel == searchLevel) return 1;
+
+	int nb = 0;
+	for (Node f: n.children){
+		nb += nbNodesByLevel(f, currentLevel, searchLevel);
+	}
+
+	return nb;
+}
+
+public int maxWidth(Node n) {
+	int max = 0, width = 0, level = 0;
+
+	while ((width == nbNodesByLevel(n, 0, level)) > 0){
+		if (width > max) max = width;
+		level++;
+	}
+}
+```
+
+Mais cette méthode n'est pas efficace, on va plutôt l'implémenter de cette manière:
+```java
+public void countByLevel(Node n, int level, List<Integer> nbNodes){
+	if (nbNodes.size() < level) nbNodes.add(1);
+	else nbNodes.set(level, nbNodes.get(level) + 1);
+
+	for (Node f: n.childre) countByLevel(f, level + 1, nbNodes);
+}
+
+```
+
+# Arbre binaire ordonné
+
+```java
+class Node {
+	Node left;
+	Node right;
+	int value;
+
+	public Node(value){
+		this.value = value;
+		left = null;
+		right = null;
+	}
+}
+```
+
+```java
+public int insert(int value){
+	insertRecur(root, value);
+}
+
+private void insertRecur(Node n, int value){
+	if (n == null)
+		root = new Node(value);
+
+	else if (value <= n.value) {
+		if (n.left != null)
+			insertRecur()
+	}
+}
+```
