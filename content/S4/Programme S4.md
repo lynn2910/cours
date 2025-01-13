@@ -4,6 +4,10 @@ draft: false
 tags: []
 date: 2024-08-30
 ---
+## Ressources
+
+- [[Android]]
+
 ## Stage
 
 *voir [[Stage]]*
