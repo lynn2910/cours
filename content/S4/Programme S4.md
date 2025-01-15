@@ -8,6 +8,8 @@ date: 2024-08-30
 
 - [[Android]]
 - [[Service web]]
+- [[NoSQL]]
+- [[Méthodes d'optimisation]]
 
 ## Stage
 
