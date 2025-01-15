@@ -79,19 +79,19 @@ $$
 
 Le programme $(x_1, x_2)$ doit **maximiser** le chiffre d'affaires : 
 
-	$\max_\limits{(x_1, x_2)} Z = 300_x1 + 800x_2$
+$\max_\limits{(x_1, x_2)} Z = 300_x1 + 800x_2$
 
 On appelle **solution optimale** toute solution admissible $(x_1^*, x_2^*)$ **optimisant** la fonction-objectif :
 
-	$\forall (x_1, x_2) Z = 300x_1 + 800x_2 <= Z^* = 300x_1^* + 800x_2^*$
+$\forall (x_1, x_2) Z = 300x_1 + 800x_2 <= Z^* = 300x_1^* + 800x_2^*$
 
-	$\Delta : 300x_1 + 800x_2 = Z$
+$\Delta : 300x_1 + 800x_2 = Z$
 
 ## Méthode graphique
 
 > [!todo] pareil, me manque les graphs :(
 
-**Point D : **
+**Point D :**
 $$
 \left\{
 	\begin{array}{ll}
