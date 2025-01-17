@@ -10,6 +10,8 @@ date: 2024-08-30
 - [[Service web]]
 - [[NoSQL]]
 - [[Méthodes d'optimisation]]
+- [[Communication interne]]
+- [[Algèbre]]
 
 ## Stage
 
