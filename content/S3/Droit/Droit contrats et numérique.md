@@ -17,6 +17,6 @@ Les différents TDs:
 - [[Salariés et Internet]]
 - [[Propriété intellectuelle]]
 - [[Que peut-on breveter]]
-- [[Révisions]]
+- [[content/S3/Droit/Révisions]]
 - [[La protection nationale par le droit d'auteur]]
 - [[Brevet informatique]]
