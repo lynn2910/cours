@@ -5,3 +5,4 @@ tags:
 ---
 *Voir [[James Dunne]]*
 
+- [[Délibération et décision]]
