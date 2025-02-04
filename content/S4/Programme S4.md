@@ -12,6 +12,7 @@ date: 2024-08-30
 - [[Méthodes d'optimisation]]
 - [[Communication interne]]
 - [[Algèbre]]
+- [[content/S4/PPP/PPP|PPP]]
 
 ## Stage
 
