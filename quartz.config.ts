@@ -20,6 +20,7 @@ const config: QuartzConfig = {
     baseUrl: "lynn.chamallow.fr/cours",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
+    generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
