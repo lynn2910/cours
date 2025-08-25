@@ -11,11 +11,12 @@ Chaque dossier est intitulé S*X* et correspond à un semestre du BUT informatiq
 > [!Summary|wide-3 min-0]+ Semestres du BUT informatique
 > - Troisième semestre: [Programme S3](Programme%20S3)
 > - Quatrième semestre: [Programme S4](Programme%20S4)
+> - Cinquième semestre: [[Programme S5]]
 
-Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suivante: [cedric.colin35@gmail.com](mailto:cedric.colin35@gmail.com)
+Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suivante : [cedric.colin35@gmail.com](mailto:cedric.colin35@gmail.com)
 
 
-## Resources
+## Ressources
 
 - [[Liste de CheatSheet]]
 - [[Langages et frameworks]]
