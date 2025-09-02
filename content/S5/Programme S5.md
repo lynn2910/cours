@@ -7,6 +7,8 @@ date: 2025-08-25
 ## Ressources
 
 - [[Politique de communication]]
+- [[Programmation Avancée]]
+- [[Analyse financière]]
 
 ## Stage
 
