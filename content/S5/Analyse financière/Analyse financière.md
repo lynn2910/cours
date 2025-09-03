@@ -19,7 +19,7 @@ L'étude du **fonds de roulement** comparé aux besoins de financement de l'expl
 
 Il est nécessaire d'analyser les principaux ratios de structure.
 
-![[assets/fonds_roulement.png]]*Schéma du fonds de roulement*
+![[fonds_roulement.png]]*Schéma du fonds de roulement*
 
 # Le bilan : instrument d'analyse financière
 

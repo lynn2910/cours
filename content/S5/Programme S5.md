@@ -9,6 +9,7 @@ date: 2025-08-25
 - [[Politique de communication]]
 - [[Programmation Avancée]]
 - [[Analyse financière]]
+- [[content/S5/Qualité dev/Qualité dev|Qualité dev]]
 
 ## Stage
 

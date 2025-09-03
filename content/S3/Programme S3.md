@@ -28,7 +28,7 @@ Au cours de ce semestre, les technologies et cours suivants seront vus:
 - [[Développement Web]]
 - [[Développement Efficace]]
 - [[Analyse]]
-- [[Qualité dev|Qualité développement]]
+- [[content/S3/Qualité dev/Qualité dev|Qualité développement]]
 - [[Programmation Objet]]
 - [[Programmation système]] (C/C++)
 - [[Architecture réseau]]
