@@ -8,6 +8,7 @@ Moodle : [lien](https://moodle.univ-fcomte.fr/course/view.php?id=22120)
 # Resources
 
 - [[Note de synthèse]]
+- [[Veille informationnelle]]
 
 # John Atanasoff
 

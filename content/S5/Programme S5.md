@@ -10,6 +10,8 @@ date: 2025-08-25
 - [[Programmation Avancée]]
 - [[Analyse financière]]
 - [[content/S5/Qualité dev/Qualité dev|Qualité dev]]
+- [[Virtualisation]]
+- [[Modélisation mathématique]]
 
 ## Stage
 
