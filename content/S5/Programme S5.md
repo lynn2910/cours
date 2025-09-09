@@ -12,6 +12,7 @@ date: 2025-08-25
 - [[content/S5/Qualité dev/Qualité dev|Qualité dev]]
 - [[Virtualisation]]
 - [[Modélisation mathématique]]
+- [[BIP]]
 
 ## Stage
 

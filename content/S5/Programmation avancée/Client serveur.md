@@ -142,3 +142,89 @@ public class TcpClient {
 }
 ```
 
+# Les protocoles de communication
+
+## Définitions
+
+**Protocole :** codification des échanges entre deux parties communicantes (par ex. client et serveur) en termes de structure, contenu et ordonnancement dans le temps.
+
+> [!danger] **Problème**
+> Du point de vue applicatif, l'échange nécessite la possibilité d'envoyer/recevoir physiquement
+
+> [!success] Un protocole repose généralement sur les fonctionnalités proposées par un protocole
+
+## Principes de création
+
+1. Définition à partir des « services » que propose le serveur, chaque service étant associé à une requête.
+2. Chaque requête provoque un ensemble de communications + traitements.
+3. Le protocole, c'est définir la structure de ces communications et leur ordonnancement, sachant que :
+	- la communication initiale doit (en principe) commencer par l'identifiant (unique) de la requête ;
+	- les réponses de même type (par ex. erreur, accusé de réception…,) doivent toutes avoir la même structure ;
+	- une requête doit toujours recevoir une réponse, même si c'est un simple accusé de réception.
+### Les étapes
+
+Étapes de définition d'un protocole :
+1. décrire de façon fonctionnelle les requêtes ;
+2. décrire de façon fonctionnelle l'ensemble des données ) communiquer (+ éventuellement les traitements) associés à chaque requête, ainsi que leur ordonnancement ;
+3. décrire la structure des communications en tenant compte du fait qu'à un moment donné de son exécution, un serveur ne doit recevoir/envoyer qu'une seule structure possible.
+
+### Problèmes 
+
+- ne pas oublier les cas d'erreur (souvent nombreux) ;
+- trouver le « bon » nombre de communications nécessaires ;
+- dépendant du langage d'implémentation envisagé ;
+- contraintes de performance ;
+- possibilité d'extension du protocole ;
+- etc.
+
+### Exemple : protocole pour un serveur horaire
+
+#### Étape 1. Description des requêtes
+
+1. Récupérer l'étape courante en fonction du fuseau horaire
+2. Envoyer l'heure courante
+
+#### Étape 2. Description des données communiquées
+
+##### Requête 1
+
+- c → s : identifiant requête, fuseau horaire ;
+- s → c : erreur/ok sur fuseau ;
+- s → c : si pas d'erreur, résultat dans l'heure courante.
+
+##### Requête 2
+
+- c → s : identifiant requête, login, mot de passe, heure ;
+- s → c : erreur/ok, sur login et/ou m.d.p et/ou heure
+
+#### Étape 3. Description des structures
+
+> [!tip] Remarques
+> - tous les identifiants requête doivent être uniques et avoir le même format (par ex, un int, une chaîne de caractère, ...) ;
+> - cohérence dans la structure des réponses de type erreur/accusé de réception, mais pas forcément pour les résultats ;
+> - on décrit généralement les formats :
+> 	- soit au format texte (le plus facile) ;
+> 	- soit au format binaire, avec les types classiques du C (plus lourd et compliqué).
+
+##### Requête 1 : « GETTIME fuseau » 
+
+- **erreur :** « ERR nb params » ou « ERR fuseau invalide »  
+- **ok :** « OK » 
+- **résultat :** « heure:minute:seconde »
+
+##### Requête 2 : « SETTIME h:m:s login password » 
+
+- **erreur :** « ERR nb params » ou « ERR login » ou ...
+- **ok :** « OK » 
+#### Etape 3*. Description des structures, format binaire
+
+##### Requête 1 : un int valant 1 (identifiant requête) + 1 octet (fuseau)
+
+- **erreur/ok :** un octet valant 0 (ok), -1 (erreur nb params), -2 (fuseau invalide)
+- **réponse :** trois octets dans l'ordre `h`, `m`, `s`
+
+##### Requête 2 : un int valant 2 (id req.) + 2 tableaux d'octets se terminant par `\0` (login, m.d.p) + trois octets (heure, minutes, secondes)
+
+- **erreur/ok :** un octet valant 0 (ok), -1 (erreur nb params), -2 (erreur login), -3 (erreur m.d.p), -4 (erreur heure)
+
+# Jsp 
