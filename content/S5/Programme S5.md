@@ -13,6 +13,7 @@ date: 2025-08-25
 - [[Virtualisation]]
 - [[Modélisation mathématique]]
 - [[BIP]]
+- [[content/S5/PPP/PPP|PPP]]
 
 ## Stage
 

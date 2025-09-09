@@ -80,3 +80,59 @@ Le bilan fonctionnel est fondé sur **les cycles financiers** de l'entreprise :
 
 La prise en compte des cycles financiers et des flux qui leur sont associés conduit à l'élaboration du bilan fonctionnel.
 
+# Schéma
+
+| Actifs (Emplois)                                            | Passifs (Ressources)             |
+| ----------------------------------------------------------- | -------------------------------- |
+| Actif immobilisé :<br>- batiments, transport, matériel, ... | Capitales propres (*Kx Propres*) |
+| Actif circulant : stocks, créances, disponibilités          | Dettes                           |
+
+Les deux colonnes doivent être égales.
+
+Certains biens peuvent avoir 3 valeurs (colonnes) :
+- valeur historique ($Vh$)
+- amortissement
+- résultat de $Vh - amortissement$ 
+
+## Transformation en bilan fonctionnel
+
+Plutôt que de raisonner en "colonnes", on va raisonner en cycles.
+
+| Actif                                                     | Passif                                                                                                                         |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Actif **stable** : c'est l'actif immobilisé en brut       | Passif/capitaux stable ; inclus :<br>- *Kx propres*<br>- *Amortissements et provisions*<br>- *Emprunts à moyen ou long termes* |
+| Actif circulant :<br>- Inclus les stocks et les créances. | Dettes circulantes : dettes à court terme                                                                                      |
+| **Trésorerie active**                                     | **Trésorerie passive**                                                                                                         |
+
+L'égalité du bilan fonctionnel est en valeurs **brutes.**
+
+> [!tip] Conseil : commencer par écrire le total.
+> Le total est évidemment <u><b>en brut</b></u>
+
+> [!tip] "Emprunts"
+> = "Découvert", est appelé "**Trésorerie passive**" dans le bilan fonctionnel.
+
+On obtient le **fond de roulement** avec cette équation :
+$$
+FR = Ps - As
+$$
+où $FR$ est le *fond de roulement*, $Ps$ le *passif stable*, et $As$ l'*actif stable*.
+
+---
+Le besoin en fonds de roulement est calculé avec cette équation :
+$$
+BFR = Ac - Dc
+$$
+où $BFR$ est le *fond de roulement*, $Ac$ l'*actif circulant*, et $Dc$ les *dettes circulantes*.
+
+---
+On peut calculer la trésorerie **net** avec cette équation :
+$$
+Tn = Ta - Tp
+$$
+où $Tn$ est la *trésorerie net*, $Ta$ la *trésorerie active*, et $Tp$ la *trésorerie passive*.
+
+On peut vérifier cette équation avec $Tn = FR - BFR$
+
+---
+
