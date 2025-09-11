@@ -14,6 +14,7 @@ date: 2025-08-25
 - [[Modélisation mathématique]]
 - [[BIP]]
 - [[content/S5/PPP/PPP|PPP]]
+- [[SAE]]
 
 ## Stage
 
