@@ -9,6 +9,7 @@ Moodle : [lien](https://moodle.univ-fcomte.fr/course/view.php?id=22120)
 
 - [[Note de synthèse]]
 - [[Veille informationnelle]]
+- [[Infographie et datavisualisation]]
 
 # John Atanasoff
 

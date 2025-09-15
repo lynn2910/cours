@@ -52,15 +52,12 @@ Mail indiquant :
 
 ### Samedi 25/10 à 23h59 au plus tard
 
-Déposer les documents sur moodle ([[#1er document Note de synthèse]] et [[#2ᵉ document sitographie commentée justifiant la pertinence des sources]])
+Déposer les documents sur Moodle ([[#1er document Note de synthèse]] et [[#2ᵉ document sitographie commentée justifiant la pertinence des sources]])
 
 ### Envoi des documents
 
 Envoi pour chaque groupe d'au moins deux sources trouvées les :
-- vendredi 19/09
-- vendredi 26/09
-- vendredi 03/10
-- vendredi 10/10
+
 
 Préciser pour chaque source :
 - le titre ;
