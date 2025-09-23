@@ -149,3 +149,120 @@ Si l'accès est possible en écriture, c'est problématique, il est probable que
 - un client A demande l'envoi d'un fichier F, alors qu'un client B en demande l'effacement ;
 - **si** `sendFile()` est interrompu par `eraseFile` : crash.
 
+# Exclusion mutuelle
+
+Pour régler le problème d'accès concurrents, il faut rendre les méthodes d'accès aux objets partagés non interruptibles (= sections critiques).
+
+> [!note] Utilisation d'un mutex
+> Verrou que l'on associe à des données d'un objet partagé
+
+## Principe
+
+- un thread ayant accès à l'objet peut (dé)verrouiller le mutex ;
+- si le mutex est déjà verrouillé, tout autre thread désirant y accéder est **mis en attente**.
+
+## En C++
+
+- On déclare une variable de type **mutex**, accessible par chaque thread, proposant des fonctions `lock()` et `unlock()` ;
+- quand un thread veut manipuler l'objet partagé via une séquence d'instructions :
+	- le mutex est verrouillé avant la séquence ;
+	- le mutex est déverrouillé après la séquence.
+
+> [!tip] Remarque
+> On crée plusieurs mutex quand les séquences manipulent différents objets partagés.
+
+## En Java
+
+> [!danger] En java, il n'y a pas de classe de type **Mutex**
+> MAIS chaque objet contient un mutex caché.
+
+On utilise alors le mot-clé `synchronized`.
+
+2 solutions possibles :
+- classe avec des méthodes `synchronized` → Le mutex utilisé est celui de l'instance de la classe ;
+- `blocks synchronized` → Le mutex utilisé est un objet annexe, par exemple attribut de classe.
+
+Le verrouillage n'est pas directement fait dans le code des threads, mais **dans celui des objets partagés**.
+
+### Exemple n°1 
+
+```java
+public synchronized int get(){
+	// ...
+}
+
+public synchronized void increment(int incVal) {
+	// ...
+}
+```
+
+Et ailleurs dans le code :
+```java
+Box b = new Box();
+
+b.increment(2); // Verrouillage du mutex de `b`
+```
+
+**Principe :**
+- si un thread entre dans une méthode `synchronized`, la JVM verrouille le mutex de l'objet contenant cette méthode
+	- les autres threads ne peuvent plus exécuter le code des méthodes `synchronized` (**la même ou les autres**) et sont mis en attente
+	- ils peuvent quand même exécuter des méthodes *normales*.
+
+### Exemple n°2 :  blocs synchronized
+
+```java
+public class Box {
+	public int val;
+	private Object lock;
+	
+	public Box() {
+		val = 0;
+		lock = new Object();
+	}
+	
+	public void increment(int incVal) {
+		synchronized(lock) {
+			val += incVal;
+			System.out.println("after inc : " + val);
+		}
+	}
+}
+```
+
+### Exemple 3 : Exclusion mutuelle
+
+
+```java
+public class Building {
+	private WC wc1,wc2,wc3;
+	
+	public void inWC1() {
+		checkPaper();
+		synchronized(wc1) {
+			useWC1();
+		}
+		washingHands();
+	}
+	
+	public void inWC1() {
+		checkPaper();
+		synchronized(wc2) {
+			useWC2();
+		}
+		washingHands();
+	}
+	
+	// ...
+}
+```
+
+# Problème d'ordonnancement
+
+Même si un accès à la ressource partagée est protégé par un mutex, il n'y a aucune certitude sur l'ordre d'exécution.
+
+Dans certains cas, un ordre non figé amène à :
+- **interblocage :** les threads attendent mutuellement que l'un relâche l'accès à la ressource partage ;
+- **famine :** un ou plusieurs threads n'ont quasi jamais accès à la ressource.
+
+Selon l'application, il est nécessaire de fixer l'ordre (par exemple, jeu du type "chacun son tour").
+
