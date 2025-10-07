@@ -15,6 +15,8 @@ date: 2025-08-25
 - [[BIP]]
 - [[content/S5/PPP/PPP|PPP]]
 - [[SAE]]
+- [[Technique d'IA]]
+- [[Management]]
 
 ## Stage
 
