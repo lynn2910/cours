@@ -251,7 +251,7 @@ void setup(){
 	pinMode(PIN_LED, OUTPUT);
 	pinMode(PIN_BUTTON, INPUT);
 	delay(50);
-	attachInterrupt(digitalPinToInterrup(PIN_BUTTON), getState, CHANGE);
+	attachInterrupt(digitalPinToInterrupt(PIN_BUTTON), getState, CHANGE);
 }
 
 void loop(){

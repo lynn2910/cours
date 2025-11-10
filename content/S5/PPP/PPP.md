@@ -6,6 +6,7 @@ tags:
 # Ressources
 
 - [[Portfolio Book]]
+- [[L'emploi dans l'informatique]]
 
 ---
 # Service Ose (Orientation Stage Emploi)
