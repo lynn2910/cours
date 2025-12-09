@@ -17,8 +17,12 @@ date: 2025-08-25
 - [[SAE]]
 - [[Technique d'IA]]
 - [[Management]]
+- [[Nouvelles bases de données]]
 
 ## Stage
+
+[[Alternance]]
+[[Différents rapports de stage]]
 
 > [!todo] Pas encore précisé
 
