@@ -1,5 +1,5 @@
 ---
-title: Différents rapports de stae
+title: Différents rapports de stage
 draft: false
 tags:
 ---
@@ -227,3 +227,31 @@ Texte descriptif et explicatif destiné à un utilisateur de l'outil créé.
 Très précis — rôle important des illustrations.
 
 Manuel utilisateur si besoin, après avoir demandé l'avis au tuteur IUT.
+
+# 4. Soutenance
+
+## plan
+
+Trois étapes :
+- présentation factuelle des tâches réalisées ;
+- démonstration ;
+- bilan de ce que vous avez réalisé.
+
+## Analyse du stage et conclusion (3-5 minutes)
+
+Analyse du stage : que changer si travail à recommencer : mettre en avant les enseignements à tirer en faisant votre autocritique pour montrer votre capacité à prendre du recul par rapport à votre travail
+
+bilan de compétences en ce qui concerne les frameworks, langages, bibliothèques, et outils de gestion de projet utilisés en expliquant votre progression
+
+
+**conclusion générale sur votre apprentissage / stage** :
+- mission confiée reprécisée
+- bilan fonctionnel pour l'organisme : mission menée à bien ? A quel point (combien de pourcentage réalisé et pour quelles raisons) ?
+- Evoquer, si c'est pertinent, les perspectives : évolutions possibles du produit développé, etc...
+
+## Autocritique
+
+Partie généralement mal pensée :
+- autocritique souvent insuffisante car analyse manquant de pertinence ;
+- mission rarement reprécisée ;
+- dernières diapositives souvent non adaptées au travail précisément réalisé.
