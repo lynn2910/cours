@@ -12,6 +12,7 @@ Chaque dossier est intitulé S*X* et correspond à un semestre du BUT informatiq
 > - Troisième semestre: [Programme S3](Programme%20S3)
 > - Quatrième semestre: [Programme S4](Programme%20S4)
 > - Cinquième semestre: [[Programme S5]]
+> - Sixième semestre: [[Programme S6]]
 
 Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suivante : [cedric.colin35@gmail.com](mailto:cedric.colin35@gmail.com)
 
