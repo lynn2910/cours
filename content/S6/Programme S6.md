@@ -6,3 +6,5 @@ tags:
 ## Ressources
 
 - [[Communication]]
+- [[content/S6/Portfolio|Portfolio]]
+

@@ -13,7 +13,7 @@ date: 2024-08-30
 - [[Communication interne]]
 - [[Algèbre]]
 - [[content/S4/PPP/PPP|PPP]]
-- [[Portfolio]]
+- [[content/S4/Portfolio]]
 
 ## Stage
 
