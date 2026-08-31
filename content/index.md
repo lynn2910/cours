@@ -14,6 +14,9 @@ Chaque dossier est intitulé S*X* et correspond à un semestre du BUT informatiq
 > - Cinquième semestre: [[Programme S5]]
 > - Sixième semestre: [[Programme S6]]
 
+> [!summary] Semestres du Master Ingénierie logicielle
+> - 1er semestre: [[Programme M1 S1]]
+
 Si vous avez des questions/remarques, vous pouvez me contacter à l'adresse suivante : [cedric.colin35@gmail.com](mailto:cedric.colin35@gmail.com)
 
 
