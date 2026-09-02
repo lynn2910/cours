@@ -5,6 +5,6 @@ tags:
 ---
 # Ressources
 
-- [[Introduction]]
+- [[content/S4/Méthodes d'optimisation/Introduction]]
 - [[Modélisation du problème]]
 
